@@ -836,7 +836,7 @@ select {
 
 /* Estilo de la imagen */
 .unite_logo img {
-    width: 100%; 
+    width: 70%; 
     max-width: 500px; 
     border: 5px solid goldenrod; 
     border-radius: 10px; 
@@ -864,8 +864,9 @@ select {
     border-radius: 5px;
     }
     .unite_logo img {
-        width: 100%; 
-        max-width: 768px; 
+        margin: 22%;
+        width: 55%; 
+        max-width: 480px; 
         border: 5px solid goldenrod; 
         border-radius: 10px; 
         box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
@@ -899,8 +900,6 @@ select {
     border-radius: 5px;
     }
     .unite_logo img {
-        justify-content: center;
-        align-items: center;
         margin: 22%;
         width: 55%; 
         max-width: 480px; 
