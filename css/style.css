@@ -1,0 +1,1687 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: auto;
+    margin: 0;         
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../IMG/Fondo1.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;     
+}
+
+main {
+    margin: auto;
+    padding: 0px;
+    margin-top: 150px;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+/*Header */
+.colornav {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.navbar-brand img {
+    max-width: 100px;
+}
+
+.colornav .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.lista_Desordenada {
+    display: flex;
+    justify-content:end;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: end;
+}
+
+.nav-link {
+    color: goldenrod;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.juegos .submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.juegos:hover .submenu {
+    display: block;
+    list-style: none;
+}
+
+.juegos .submenu li {
+    padding: 10px 20px;
+}
+
+.juegos .submenu li a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.juegos .submenu li a:hover {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .lista_Desordenada {
+        flex-direction: column;
+        align-items: end; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lista_Desordenada {
+        flex-direction: column;
+        align-items:end;
+    }
+    .colornav {
+        padding: 0%;
+        margin: 0%;
+    }
+    .container-fluid a img{
+        width: 20vw;
+    };
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"white" stroke-linecap%3D"round" stroke-miterlimit%3D"10" stroke-width%3D"2" d%3D"M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Ícono de menú hamburguesa en color blanco */
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction:column;
+    color: white;
+    background-color: #1a1a1a;
+    text-decoration: none;
+    text-size-adjust: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr_footer{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.container-patrocinadores{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.patrocinadores-iconos{   
+    display: inline-block;
+    margin: 0px 15px;
+    transition: 0,5s;
+    gap: 50px;
+}
+
+.patrocinadores-iconos a{
+    margin: 5px 10px;
+}
+
+.patrocinadores-iconos :hover {
+    transform:translateY(-10px)
+}
+
+.redes{      
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.redes-iconos{
+    display: inline-block;
+    margin: 5px 15px;
+    transition: 0,5s;
+}
+
+.redes-iconos a{
+    margin: 5px 10px;
+    width: 50px;
+}
+
+.redes-iconos :hover {
+    transform:translateY(-10px)
+}
+
+.copyright{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Responsive en 768px y 840px*/
+
+@media screen and (max-width: 768px) {
+    .container-patrocinadores{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin: 0px 5px;
+    }
+    .container-redes {        
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 50px;
+        margin-top: 5%;
+    }
+    .patrocinadores{
+        font-size: 2px;
+    }
+    .patrocinadores-iconos a{
+        display: inline-block;
+        padding-left: 0;
+        margin: auto;
+        align-items: center;
+    }
+    .redes-iconos a{
+        display: inline-block;
+        padding-left: 10%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-patrocinadores{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0px 10px;
+    }
+    .container-redes {        
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 50px;
+        margin-top: 5%;
+    }
+    .patrocinadores-iconos a{
+        display: inline-block;
+        padding-left: 10%;
+        align-items: center;
+    }
+    .redes-iconos a{
+        display: inline-block;
+        padding-left: 10%;
+        align-items: center;
+    }
+    
+}
+
+/*---------------------------------------------------------------------*/
+
+/*INDEX*/
+
+/* Carrusel */
+.carousel {
+    width: 100vw; /* Ancho completo del viewport */
+    height: 100vh; /* Altura completa del viewport */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh; /* Ajusta la imagen al 100% de la altura de la ventana */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien sin distorsionarse */
+}
+
+
+/* index- shop - noticias */
+.index-shop-noticias {
+    display: inline-block;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    margin-top: 50px;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+
+/* Sección SHOP */
+.index-shop {
+    width: 48%; /* Ocupa el 48% del ancho de la pantalla */
+    text-align: center; /* Centra el título */
+    margin-right: auto;
+    margin-top: 13px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    background-color: goldenrod;
+    border:  solid black;
+    border-radius: 5px;
+}
+
+.index-shop h2 {
+    font-size: 2rem;
+    color: black; /* Color destacado para SHOP */
+    text-shadow:
+    3px 3px 0px yellow,
+    -3px 3px 0px yellow,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+}
+
+.index-shop h2 a {
+    padding: 0;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Mantiene el color original del texto */
+}
+
+.shop-links {
+    display: flex;
+    justify-content: center; /* Centra las imágenes en la sección */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 10px;
+}
+
+.shop-links img {
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8; /* Aplica opacidad inicial */
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.shop-links img:hover {
+    opacity: 1; /* Restablece la opacidad */
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+
+/* Sección NOTICIAS */
+.noticias {
+    width: 48%; /* Ocupa el 48% del ancho de la pantalla */
+    text-align: center; /* Centra el título */
+    margin-right: auto;
+    background-color: goldenrod;
+    border:  solid black;
+    border-radius: 5px;
+}
+
+.noticias h2 {
+    padding: auto;
+    font-size: 2rem;
+    color:  black; /* Color destacado para NOTICIAS */
+    text-shadow:
+    3px 3px 0px yellow,
+    -3px 3px 0px yellow,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+}
+
+.noticias p {
+    text-align: justify; /* Justifica el texto para una mejor presentación */
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: black; /* Color del texto */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .carousel-item img {
+        max-height: 1000px; /* Disminuye la altura de las imágenes en pantallas más pequeñas */
+    }
+    .index-shop-noticias {
+        display:flex;
+        flex-direction: column;
+    }
+    .index-shop {
+        width: 100%; 
+        text-align: center; /* Centra el título */
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        border: solid black;
+    }
+    .shop-links a img {
+        width: 30vw;
+        border: outset gold;
+    }
+    .noticias {
+        padding-top: 10%;
+        width: 100%;
+        border: solid rgb(232, 68, 68);
+        margin-top: auto;
+        text-align: center; /* Centra el título */
+    }
+}
+@media screen and (max-width: 480px) {
+    .carousel-item img {
+        max-height: 700px; /* Disminuye la altura de las imágenes en pantallas más pequeñas */
+    }
+    .index-shop-noticias {
+        display:flex;
+        flex-direction: column;
+    }
+    .index-shop {
+        width: 100%; 
+        text-align: center; /* Centra el título */
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        border: solid black;
+    }
+    .shop-links a img {
+        width: 30vw;
+        border: outset gold;
+    }
+    .noticias {
+        padding-top: 10%;
+        width: 100%;
+        border: solid rgb(232, 68, 68);
+        margin-top: auto;
+        text-align: center; /* Centra el título */
+    }
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*SOMOS*/
+
+.somos h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de texto y video */
+.somos-video-text {
+    background-color: #ffcc00;
+    padding: 50px 100px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea superiormente */
+    gap: 10px; /* Espacio entre el texto y el video */
+    margin: 0 auto; /* Centra el contenedor */
+    max-width: 1250px; /* Limita el ancho máximo */
+    border: groove black;
+    border-radius: 10px;
+}
+
+/* Sección del texto */
+.text-somos {
+    width: 40%; /* El texto ocupa la mitad del espacio */
+    text-align: justify; /* Justifica el texto */
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #000000;
+}
+
+/* Sección del video */
+.video-somos iframe {
+    width: 500px; 
+    height: 500px;
+}
+
+/* Estilo para el contenedor principal */
+.somos-siglas-lema-somos_logontr {
+    display: flex; /* Flexbox para alinear los elementos en línea horizontal */
+    justify-content: space-between; /* Distribuye los elementos en todo el ancho */
+    align-items: center; /* Alinea verticalmente en el centro */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Margen interno */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    background-color: #ffcc00;
+    border: solid black;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+
+.siglas {
+    width: 30%; 
+    text-align: justify; 
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.lema {
+    width: 40%; 
+    text-align: center; 
+    color: red;
+    font-style: italic solid;
+    font-size: 1,5rem;
+    line-height: 1.8;
+}
+
+.somos_logontr img {
+    width: 500px;  
+    height: 500px;
+    border-radius: 10px; 
+    border: 2px solid goldenrod;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/*RESPONSIVE SOMOS*/
+
+@media screen and (max-width: 768px) {
+    .somos-video-text {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding: 10px;
+        margin: 25px;
+        align-items:center;
+        max-width: 768px; 
+    }
+    .text-somos {
+        width: 90%;
+        text-align: justify; 
+        font-size: 1.2rem;
+        line-height: 2;
+        color: #000000;
+    }
+    .video-somos iframe {
+        width: 80vw; 
+        height: 400px;
+    }
+    .somos-siglas-lema-somos_logontr {
+        display: flex; /* Flexbox para alinear los elementos en línea horizontal */
+        flex-direction: column;
+        justify-content: center; /* Distribuye los elementos en todo el ancho */
+        align-items: center; /* Alinea verticalmente en el centro */
+        gap: 10px; /* Espacio entre los elementos */
+        padding: 10px; /* Margen interno */
+        margin: 25px; /* Centra el contenedor horizontalmente */
+        max-width: 768px; /* Limita el ancho máximo del contenedor */
+        background-color: #ffcc00;
+        border: solid black;
+        border-radius: 10px;
+        margin-bottom: 5%;
+    }
+    .siglas {
+        width: 78%; 
+        text-align: justify; 
+        color: black;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    .lema {
+        width: 78%; 
+        text-align: center; 
+        color: red;
+        font-style: italic;
+        font-size: 2rem;
+        line-height: 2;
+    }
+    
+    .somos_logontr img {
+        width: 250px;  
+        height: 250px;
+        border-radius: 10px; 
+        border: 2px solid goldenrod;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+}
+@media screen and (max-width: 480px) {
+    .somos-video-text {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding: 10px;
+        margin: 25px;
+        align-items:center;
+        max-width: 480px; 
+    }
+    .text-somos {
+        width: 90%;
+        text-align: justify; 
+        font-size: 1.2rem;
+        line-height: 2;
+        color: #000000;
+    }
+    .video-somos iframe {
+        width: 80vw; 
+        height: 400px;
+    }
+    .somos-siglas-lema-somos_logontr {
+        display: flex; /* Flexbox para alinear los elementos en línea horizontal */
+        flex-direction: column;
+        justify-content: center; /* Distribuye los elementos en todo el ancho */
+        align-items: center; /* Alinea verticalmente en el centro */
+        gap: 10px; /* Espacio entre los elementos */
+        padding: 10px; /* Margen interno */
+        margin: 25px; /* Centra el contenedor horizontalmente */
+        max-width: 480px; /* Limita el ancho máximo del contenedor */
+        background-color: #ffcc00;
+        border: solid black;
+        border-radius: 10px;
+        margin-bottom: 5%;
+    }
+    .siglas {
+        width: 78%; 
+        text-align: justify; 
+        color: black;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    .lema {
+        width: 78%; 
+        text-align: center; 
+        color: red;
+        font-style: italic;
+        font-size: 2rem;
+        line-height: 2;
+    }
+    
+    .somos_logontr img {
+        width: 250px;  
+        height: 250px;
+        border-radius: 10px; 
+        border: 2px solid goldenrod;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+}
+/*-----------------------------------------------------------------------------*/
+/*SHOP*/
+
+/* Título de la sección */
+.shop h2 {    
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de los productos */
+.productos {
+    display: flex;
+    justify-content: space-around; /* Distribuye las camisetas de manera uniforme */
+    align-items: center; /* Centra las camisetas verticalmente */
+    flex-wrap: wrap; /* Permite que las camisetas se envuelvan en pantallas más pequeñas */
+    margin: 0 auto; /* Centra el contenedor de productos */
+    margin-bottom: 10%;
+    max-width: 1200px; /* Limita el ancho máximo */
+    gap: 20px; /* Espacio entre las camisetas */
+}
+
+/* Estilo de las camisetas */
+.camiseta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro de cada camiseta */
+    width: 30%; /* Cada camiseta ocupa el 30% del contenedor */
+    text-align: center;
+    border: 1px solid #ffe600; /* Opcional: añade borde alrededor */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: #000000;
+}
+
+/* Estilo de las imágenes de camisetas */
+.camiseta img {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    max-width: 300px; /* Establece un ancho máximo para las imágenes */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los h3 y el precio */
+.camiseta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.camiseta p {
+    font-size: 1.2rem;
+    color: gold;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los selectores de talle */
+.camiseta label, .camiseta select {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gold;
+}
+
+
+/*RESPONSIVE SHOP*/
+
+@media (max-width: 768px) {
+    .productos {
+        max-width: 100%; 
+        gap: 15px; 
+    }
+
+    .camiseta {
+        width: 45%; 
+        padding: 15px; 
+    }
+
+    .camiseta img {
+        max-width: 250px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .productos {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .camiseta {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    .camiseta img {
+        max-width: 200px; 
+    }
+
+    .camiseta h3 {
+        font-size: 1.2rem;
+    }
+
+    .camiseta p {
+        font-size: 1rem;
+    }
+} 
+
+/*-----------------------------------------------------------------------------*/
+
+/*UNITE*/
+
+.unite h2 {    
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+.unite_logo-formulario {
+    display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+    justify-content: space-between; /* Separa el formulario y la imagen a los extremos */
+    align-items: flex-start; /* Alinea ambos elementos en la parte superior */
+    gap: 20px; /* Añade espacio entre el formulario y la imagen */
+    margin: 20px;
+}
+
+/* Estilo del formulario */
+.formulario {
+    width: 60%; 
+    padding: 20px;
+    background-color: #000000; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px goldenrod; 
+}
+
+.formulario form div {
+    margin-bottom: 15px; 
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="date"],
+.formulario select,
+.formulario textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+.formulario input[type="submit"],
+.formulario input[type="reset"] {
+    padding: 10px 20px;
+    background-color: goldenrod; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario input[type="submit"]:hover,
+.formulario input[type="reset"]:hover {
+    background-color: #ff8c00; 
+}
+
+/* Estilo de la imagen */
+.unite_logo img {
+    width: 100%; 
+    max-width: 500px; 
+    border: 5px solid goldenrod; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+    margin-top: 50%;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .unite_logo-formulario {
+        display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+        flex-direction: column;
+        justify-content: center; /* Separa el formulario y la imagen a los extremos */
+        align-items: center; /* Alinea ambos elementos en la parte superior */
+        gap: 20px; /* Añade espacio entre el formulario y la imagen */
+        margin: 20px;
+    }
+    .formulario input[type="submit"],
+    .formulario input[type="reset"] {
+    padding: 15px 25px;
+    margin-bottom: 5%;
+    background-color: goldenrod; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    }
+    .unite_logo img {
+        width: 100%; 
+        max-width: 768px; 
+        border: 5px solid goldenrod; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .unite_logo-formulario {
+        display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+        flex-direction: column;
+        justify-content: center; /* Separa el formulario y la imagen a los extremos */
+        align-items: center; /* Alinea ambos elementos en la parte superior */
+        gap: 20px; /* Añade espacio entre el formulario y la imagen */
+        margin: 20px;
+    }
+    .formulario {
+        width: 80%; 
+        padding: 20px;
+        background-color: #000000; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px goldenrod; 
+    }
+    .formulario input[type="submit"],
+    .formulario input[type="reset"] {
+    padding: 15px 25px;
+    margin-bottom: 5%;
+    background-color: goldenrod; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    }
+    .unite_logo img {
+        width: 100%; 
+        max-width: 480px; 
+        border: 5px solid goldenrod; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+        margin-top: 25%;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Contácto*/
+
+.contactate h2{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+.contactate_logo-formulario{
+    display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+    justify-content: space-between; /* Separa el formulario y la imagen a los extremos */
+    align-items: flex-start; /* Alinea ambos elementos en la parte superior */
+    gap: 20px; /* Añade espacio entre el formulario y la imagen */
+    margin: 20px;
+}
+
+.cotactate_logo img {
+    width: 100%; 
+    max-width: 500px; 
+    border: 5px solid goldenrod; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+    margin-top: 8%;
+}
+
+/*RESPONSIVE CONTACTO*/
+
+@media screen and (max-width: 768px) {
+    .contactate_logo-formulario{
+        display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+        flex-direction: column;
+        justify-content: center; /* Separa el formulario y la imagen a los extremos */
+        align-items: center; /* Alinea ambos elementos en la parte superior */
+        gap: 20px; /* Añade espacio entre el formulario y la imagen */
+        margin: 20px;
+    }
+    .cotactate_logo img {
+        flex-direction: column;
+        width: 100%; 
+        max-width: 768px; 
+        border: 5px solid goldenrod; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+        margin-top: 8%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contactate_logo-formulario{
+        display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+        flex-direction: column;
+        justify-content: center; /* Separa el formulario y la imagen a los extremos */
+        align-items: center; /* Alinea ambos elementos en la parte superior */
+        gap: 20px; /* Añade espacio entre el formulario y la imagen */
+        margin: 20px;
+    }
+    .cotactate_logo img {
+        flex-direction: column;
+        width: 100%; 
+        max-width: 480px; 
+        border: 5px solid goldenrod; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+        margin-top: 8%;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Equipos*/
+
+.teams h2{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+.team-selection {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 20px; 
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.team-item {
+    text-align: center;
+}
+
+.team-item img {
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-item img:hover {
+    opacity: 1;
+    transform: scale(1.05); /* Escala ligeramente la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Añade una sombra para más profundidad */
+}
+
+h3 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;    
+    margin-bottom: 15%;
+}
+
+h3 a:hover {
+    color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+    .team-selection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 20px; 
+        margin: 0 auto;
+        max-width: 768px;
+        padding-bottom: 10%;
+    }
+    .team-item img {
+        width: 100%;
+        max-width: 300px; 
+        border-radius: 10px;
+        opacity: 1;
+    }
+    h3 a {
+        color: black;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-selection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 20px; 
+        margin: 0 auto;
+        max-width: 480px;
+        padding-bottom: 10%;
+    }
+    .team-item img {
+        width: 100%;
+        max-width: 300px; 
+        border-radius: 10px;
+        opacity: 1;
+    }
+    h3 a {
+        color: black;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*EQUIPOS: CallOfDuty*/
+
+.callofduty h2{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+.modal-content {
+    background-color: black;
+}
+
+.modal-title {
+    color: gold;
+}
+
+.modal-body{
+    color: gold;
+}
+
+.warzone h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+}
+
+/* Sección de 'Sobre Call of Duty' */
+.sobre-callofduty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.sobre-callofduty p {
+    width: 50%; 
+    text-align: justify; 
+    background-color: goldenrod;
+    border: solid;
+    padding: 2%;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.sobre-callofduty img {
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    width: 40vw; /* Puedes ajustar este valor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Sección 'Roster y la Liga' */
+.roster-liga {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.roster-liga img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.roster-liga p {
+    width: 50%; 
+    text-align: justify; 
+    background-color: goldenrod;
+    border: solid;
+    padding: 2%;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) {
+    .text-start {
+        display: flex;
+        justify-content: center; 
+        padding: 4%; 
+    }
+    .sobre-callofduty {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .sobre-callofduty p {
+        width: 75%; 
+        text-align: justify; 
+        background-color: goldenrod;
+        border: solid;
+        padding: 2%;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+    
+    .sobre-callofduty img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        max-width: 768px;
+    }
+    
+    /* Sección 'Roster y la Liga' */
+    .roster-liga {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .roster-liga img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        border-radius: 10px;
+        padding-top: 10%;        
+        padding-bottom: 10%;
+    }
+    .roster-liga p {
+        width: 75%; 
+        text-align: justify; 
+        background-color: goldenrod;
+        border: solid;
+        padding: 2%;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+}
+@media screen and (max-width:480px ) {
+    .text-start {
+        display: flex;
+        justify-content: center; 
+        padding: 4%; 
+    }
+    .sobre-callofduty {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .sobre-callofduty p {
+        width: 85%; 
+        text-align: justify; 
+        background-color: goldenrod;
+        border: solid;
+        padding: 2%;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+    
+    .sobre-callofduty img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        max-width: 768px;
+    }
+    
+    /* Sección 'Roster y la Liga' */
+    .roster-liga {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .roster-liga img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        border-radius: 10px;
+        padding-top: 10%;        
+        padding-bottom: 10%;
+    }
+    .roster-liga p {
+        width: 85%; 
+        text-align: justify; 
+        background-color: goldenrod;
+        border: solid;
+        padding: 2%;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+}
+
+/* Sección de 'Trofeos' */
+
+.cod h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+}
+
+.trofeos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.trofeos_cod p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%; 
+    text-align: justify; 
+    background-color: goldenrod;
+    border: solid;
+    padding: 2%;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;  
+    margin-left: 5%;
+}
+
+.trofeos_cod img {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+/* Estilo para la tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #000000;
+    color:yellow;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+.cod_equipo {
+    background-color: goldenrod;
+}
+
+audio {
+    display:flow-root;
+    margin: 20px auto;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    box-shadow: 0 5px 25px goldenrod;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*EQUIPOS: Lol*/
+
+.leagueoflegends {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+}
+
+.lol_subt {    
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+}
+
+.sobre-leagueoflegends{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.sobre-leagueoflegends p {
+    background-color: goldenrod;
+    border: solid black;
+    padding: 2%;
+    border-radius: 10px;
+    width: 50%; 
+    text-align: justify; 
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.sobre-leagueoflegends img {
+    box-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    width: 400px;
+    border-radius: 10px;
+    margin: 3%;
+}
+
+.rosterLOL {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.rosterLOL p {
+    background-color: goldenrod;
+    border: solid black;
+    padding: 2%;
+    border-radius: 10px;
+    width: 50%; 
+    text-align: justify; 
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.rosterLOL img {
+    box-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin: 3%;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.trofeos-lol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.trofeos-lol p {
+    background-color: goldenrod;
+    border: solid black;
+    padding: 2%;
+    border-radius: 10px;
+    width: 50%; 
+    text-align: justify; 
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;    
+}
+
+.trofeos-lol img {
+    box-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin: 3%;
+    width: 500px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .sobre-leagueoflegends{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sobre-leagueoflegends p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+        margin-top: 2%;
+        width: 85%; 
+    }
+    
+    .sobre-leagueoflegends img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+    }
+    
+    .rosterLOL {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rosterLOL p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+        margin-top: 2%;
+        width: 85%; 
+    }
+    
+    .rosterLOL img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3%;
+        width: 600px;
+        border-radius: 10px;
+    }
+    
+    .trofeos-lol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .trofeos-lol p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+        margin-top: 2%;
+        width: 85%; 
+        margin-left: 3%;
+    }
+    
+    .trofeos-lol img {
+        box-shadow:
+        3px 3px 0px goldenrod,
+        -3px 3px 0px goldenrod,
+        3px -3px 0px gold,
+        -3px -3px 0px gold;
+        margin: 3%;
+        width: 500px;
+        border-radius: 10px;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .sobre-leagueoflegends{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sobre-leagueoflegends p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+        margin-top: 2%;
+        width: 85%; 
+    }
+    
+    .sobre-leagueoflegends img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+    
+    .rosterLOL {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rosterLOL p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+        margin-top: 2%;
+        width: 85%; 
+    }
+    
+    .rosterLOL img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3%;
+        width: 400px;
+        border-radius: 10px;
+    }
+    
+    .trofeos-lol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .trofeos-lol p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+        margin-top: 2%;
+        width: 85%; 
+        margin-left: 3%;
+    }
+    
+    .trofeos-lol img {
+        box-shadow:
+        3px 3px 0px goldenrod,
+        -3px 3px 0px goldenrod,
+        3px -3px 0px gold,
+        -3px -3px 0px gold;
+        margin: 3%;
+        width: 450px;
+        border-radius: 10px;
+    }
+    
+}
