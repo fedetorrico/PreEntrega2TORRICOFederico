@@ -390,6 +390,10 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+    .carousel {
+        width: 100vw; /* Ancho completo del viewport */
+        height: 100vh; /* Altura completa del viewport */
+    }
     .carousel-item img {
         max-height: 1000px; /* Disminuye la altura de las imágenes en pantallas más pequeñas */
     }
