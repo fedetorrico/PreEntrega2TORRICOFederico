@@ -1,0 +1,138 @@
+/*UNITE*/
+
+.unite h2 {    
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+.unite_logo-formulario {
+    display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+    justify-content: space-between; /* Separa el formulario y la imagen a los extremos */
+    align-items: flex-start; /* Alinea ambos elementos en la parte superior */
+    gap: 20px; /* Añade espacio entre el formulario y la imagen */
+    margin: 20px;
+}
+
+/* Estilo del formulario */
+.formulario {
+    width: 60%; 
+    padding: 20px;
+    background-color: #000000; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px goldenrod; 
+}
+
+.formulario form div {
+    margin-bottom: 15px; 
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="date"],
+.formulario select,
+.formulario textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+.formulario input[type="submit"],
+.formulario input[type="reset"] {
+    padding: 10px 20px;
+    background-color: goldenrod; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario input[type="submit"]:hover,
+.formulario input[type="reset"]:hover {
+    background-color: #ff8c00; 
+}
+
+/* Estilo de la imagen */
+.unite_logo img {
+    width: 70%; 
+    max-width: 500px; 
+    border: 5px solid goldenrod; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+    margin-top: 50%;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .unite_logo-formulario {
+        display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+        flex-direction: column;
+        justify-content: center; /* Separa el formulario y la imagen a los extremos */
+        align-items: center; /* Alinea ambos elementos en la parte superior */
+        gap: 20px; /* Añade espacio entre el formulario y la imagen */
+        margin: 20px;
+    }
+    .formulario input[type="submit"],
+    .formulario input[type="reset"] {
+    padding: 15px 25px;
+    margin-bottom: 5%;
+    background-color: goldenrod; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    }
+    .unite_logo img {
+        margin: 22%;
+        width: 55%; 
+        max-width: 480px; 
+        border: 5px solid goldenrod; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .unite_logo-formulario {
+        display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+        flex-direction: column;
+        justify-content: center; /* Separa el formulario y la imagen a los extremos */
+        align-items: center; /* Alinea ambos elementos en la parte superior */
+        gap: 20px; /* Añade espacio entre el formulario y la imagen */
+        margin: 20px;
+    }
+    .formulario {
+        width: 80%; 
+        padding: 20px;
+        background-color: #000000; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px goldenrod; 
+    }
+    .formulario input[type="submit"],
+    .formulario input[type="reset"] {
+    padding: 15px 25px;
+    margin-bottom: 5%;
+    background-color: goldenrod; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    }
+    .unite_logo img {
+        margin: 22%;
+        width: 55%; 
+        max-width: 480px; 
+        border: 5px solid goldenrod; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+        margin-top: 25%;
+    }
+}

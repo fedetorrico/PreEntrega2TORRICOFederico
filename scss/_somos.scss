@@ -1,0 +1,204 @@
+/*SOMOS*/
+
+.somos h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de texto y video */
+.somos-video-text {
+    background-color: #ffcc00;
+    padding: 50px 100px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea superiormente */
+    gap: 10px; /* Espacio entre el texto y el video */
+    margin: 0 auto; /* Centra el contenedor */
+    max-width: 1250px; /* Limita el ancho máximo */
+    border: groove black;
+    border-radius: 10px;
+}
+
+/* Sección del texto */
+.text-somos {
+    width: 40%; /* El texto ocupa la mitad del espacio */
+    text-align: justify; /* Justifica el texto */
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #000000;
+}
+
+/* Sección del video */
+.video-somos iframe {
+    width: 500px; 
+    height: 500px;
+}
+
+/* Estilo para el contenedor principal */
+.somos-siglas-lema-somos_logontr {
+    display: flex; /* Flexbox para alinear los elementos en línea horizontal */
+    justify-content: space-between; /* Distribuye los elementos en todo el ancho */
+    align-items: center; /* Alinea verticalmente en el centro */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Margen interno */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    background-color: #ffcc00;
+    border: solid black;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+
+.siglas {
+    width: 30%; 
+    text-align: justify; 
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.lema {
+    width: 40%; 
+    text-align: center; 
+    color: red;
+    font-style: italic solid;
+    font-size: 1,5rem;
+    line-height: 1.8;
+}
+
+.somos_logontr img {
+    width: 500px;  
+    height: 500px;
+    border-radius: 10px; 
+    border: 2px solid goldenrod;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/*RESPONSIVE SOMOS*/
+
+@media screen and (max-width: 768px) {
+    .somos-video-text {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding: 10px;
+        margin: 25px;
+        align-items:center;
+        max-width: 768px; 
+    }
+    .text-somos {
+        width: 90%;
+        text-align: justify; 
+        font-size: 1.2rem;
+        line-height: 2;
+        color: #000000;
+    }
+    .video-somos iframe {
+        width: 80vw; 
+        height: 400px;
+    }
+    .somos-siglas-lema-somos_logontr {
+        display: flex; /* Flexbox para alinear los elementos en línea horizontal */
+        flex-direction: column;
+        justify-content: center; /* Distribuye los elementos en todo el ancho */
+        align-items: center; /* Alinea verticalmente en el centro */
+        gap: 10px; /* Espacio entre los elementos */
+        padding: 10px; /* Margen interno */
+        margin: 25px; /* Centra el contenedor horizontalmente */
+        max-width: 768px; /* Limita el ancho máximo del contenedor */
+        background-color: #ffcc00;
+        border: solid black;
+        border-radius: 10px;
+        margin-bottom: 5%;
+    }
+    .siglas {
+        width: 78%; 
+        text-align: justify; 
+        color: black;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    .lema {
+        width: 78%; 
+        text-align: center; 
+        color: red;
+        font-style: italic;
+        font-size: 2rem;
+        line-height: 2;
+    }
+    
+    .somos_logontr img {
+        width: 250px;  
+        height: 250px;
+        border-radius: 10px; 
+        border: 2px solid goldenrod;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+}
+@media screen and (max-width: 480px) {
+    .somos-video-text {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding: 10px;
+        margin: 25px;
+        align-items:center;
+        max-width: 480px; 
+    }
+    .text-somos {
+        width: 90%;
+        text-align: justify; 
+        font-size: 1.2rem;
+        line-height: 2;
+        color: #000000;
+    }
+    .video-somos iframe {
+        width: 80vw; 
+        height: 400px;
+    }
+    .somos-siglas-lema-somos_logontr {
+        display: flex; /* Flexbox para alinear los elementos en línea horizontal */
+        flex-direction: column;
+        justify-content: center; /* Distribuye los elementos en todo el ancho */
+        align-items: center; /* Alinea verticalmente en el centro */
+        gap: 10px; /* Espacio entre los elementos */
+        padding: 10px; /* Margen interno */
+        margin: 25px; /* Centra el contenedor horizontalmente */
+        max-width: 480px; /* Limita el ancho máximo del contenedor */
+        background-color: #ffcc00;
+        border: solid black;
+        border-radius: 10px;
+        margin-bottom: 5%;
+    }
+    .siglas {
+        width: 78%; 
+        text-align: justify; 
+        color: black;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    .lema {
+        width: 78%; 
+        text-align: center; 
+        color: red;
+        font-style: italic;
+        font-size: 2rem;
+        line-height: 2;
+    }
+    
+    .somos_logontr img {
+        width: 250px;  
+        height: 250px;
+        border-radius: 10px; 
+        border: 2px solid goldenrod;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+}

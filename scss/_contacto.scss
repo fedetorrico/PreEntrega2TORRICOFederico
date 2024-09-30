@@ -1,0 +1,71 @@
+/*Contácto*/
+
+.contactate h2{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+.contactate_logo-formulario{
+    display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+    justify-content: space-between; /* Separa el formulario y la imagen a los extremos */
+    align-items: flex-start; /* Alinea ambos elementos en la parte superior */
+    gap: 20px; /* Añade espacio entre el formulario y la imagen */
+    margin: 20px;
+}
+
+.cotactate_logo img {
+    width: 100%; 
+    max-width: 500px; 
+    border: 5px solid goldenrod; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+    margin-top: 8%;
+}
+
+/*RESPONSIVE CONTACTO*/
+
+@media screen and (max-width: 768px) {
+    .contactate_logo-formulario{
+        display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+        flex-direction: column;
+        justify-content: center; /* Separa el formulario y la imagen a los extremos */
+        align-items: center; /* Alinea ambos elementos en la parte superior */
+        gap: 20px; /* Añade espacio entre el formulario y la imagen */
+        margin: 20px;
+    }
+    .cotactate_logo img {
+        flex-direction: column;
+        width: 100%; 
+        max-width: 768px; 
+        border: 5px solid goldenrod; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+        margin-top: 8%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contactate_logo-formulario{
+        display: flex; /* Usamos Flexbox para alinear los elementos en línea */
+        flex-direction: column;
+        justify-content: center; /* Separa el formulario y la imagen a los extremos */
+        align-items: center; /* Alinea ambos elementos en la parte superior */
+        gap: 20px; /* Añade espacio entre el formulario y la imagen */
+        margin: 20px;
+    }
+    .cotactate_logo img {
+        flex-direction: column;
+        width: 100%; 
+        max-width: 480px; 
+        border: 5px solid goldenrod; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(33, 33, 33, 0.1); 
+        margin-top: 8%;
+    }
+}

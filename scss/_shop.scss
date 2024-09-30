@@ -1,0 +1,116 @@
+/*SHOP*/
+
+/* Título de la sección */
+.shop h2 {    
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de los productos */
+.productos {
+    display: flex;
+    justify-content: space-around; /* Distribuye las camisetas de manera uniforme */
+    align-items: center; /* Centra las camisetas verticalmente */
+    flex-wrap: wrap; /* Permite que las camisetas se envuelvan en pantallas más pequeñas */
+    margin: 0 auto; /* Centra el contenedor de productos */
+    margin-bottom: 10%;
+    max-width: 1200px; /* Limita el ancho máximo */
+    gap: 20px; /* Espacio entre las camisetas */
+}
+
+/* Estilo de las camisetas */
+.camiseta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro de cada camiseta */
+    width: 30%; /* Cada camiseta ocupa el 30% del contenedor */
+    text-align: center;
+    border: 1px solid #ffe600; /* Opcional: añade borde alrededor */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: #000000;
+}
+
+/* Estilo de las imágenes de camisetas */
+.camiseta img {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    max-width: 300px; /* Establece un ancho máximo para las imágenes */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los h3 y el precio */
+.camiseta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.camiseta p {
+    font-size: 1.2rem;
+    color: gold;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los selectores de talle */
+.camiseta label, .camiseta select {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gold;
+}
+
+
+/*RESPONSIVE SHOP*/
+
+@media (max-width: 768px) {
+    .productos {
+        max-width: 100%; 
+        gap: 15px; 
+    }
+
+    .camiseta {
+        width: 45%; 
+        padding: 15px; 
+    }
+
+    .camiseta img {
+        max-width: 250px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .productos {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .camiseta {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    .camiseta img {
+        max-width: 200px; 
+    }
+
+    .camiseta h3 {
+        font-size: 1.2rem;
+    }
+
+    .camiseta p {
+        font-size: 1rem;
+    }
+} 

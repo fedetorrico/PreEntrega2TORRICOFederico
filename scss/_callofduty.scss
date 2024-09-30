@@ -1,0 +1,310 @@
+/*EQUIPOS: CallOfDuty*/
+
+.callofduty h2{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+.modal-content {
+    background-color: black;
+}
+
+.modal-title {
+    color: gold;
+}
+
+.modal-body{
+    color: gold;
+}
+
+.warzone h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+}
+
+/* Sección de 'Sobre Call of Duty' */
+.sobre-callofduty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.sobre-callofduty p {
+    width: 50%; 
+    text-align: justify; 
+    background-color: goldenrod;
+    border: solid;
+    padding: 2%;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.sobre-callofduty img {
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    width: 40vw; /* Puedes ajustar este valor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Sección 'Roster y la Liga' */
+.roster-liga {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.roster-liga img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.roster-liga p {
+    width: 50%; 
+    text-align: justify; 
+    background-color: goldenrod;
+    border: solid;
+    padding: 2%;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) {
+    .text-start {
+        display: flex;
+        justify-content: center; 
+        padding: 4%; 
+    }
+    .sobre-callofduty {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .sobre-callofduty p {
+        width: 75%; 
+        text-align: justify; 
+        background-color: goldenrod;
+        border: solid;
+        padding: 2%;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+    
+    .sobre-callofduty img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        max-width: 768px;
+    }
+    
+    /* Sección 'Roster y la Liga' */
+    .roster-liga {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .roster-liga img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        border-radius: 10px;
+        padding-top: 10%;        
+        padding-bottom: 10%;
+    }
+    .roster-liga p {
+        width: 75%; 
+        text-align: justify; 
+        background-color: goldenrod;
+        border: solid;
+        padding: 2%;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+}
+@media screen and (max-width:480px ) {
+    .text-start {
+        display: flex;
+        justify-content: center; 
+        padding: 4%; 
+    }
+    .sobre-callofduty {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .sobre-callofduty p {
+        width: 85%; 
+        text-align: justify; 
+        background-color: goldenrod;
+        border: solid;
+        padding: 2%;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+    
+    .sobre-callofduty img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        max-width: 768px;
+    }
+    
+    /* Sección 'Roster y la Liga' */
+    .roster-liga {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .roster-liga img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        border-radius: 10px;
+        padding-top: 10%;        
+        padding-bottom: 10%;
+    }
+    .roster-liga p {
+        width: 85%; 
+        text-align: justify; 
+        background-color: goldenrod;
+        border: solid;
+        padding: 2%;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+}
+
+/* Sección de 'Trofeos' */
+
+.cod h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+}
+
+.trofeos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.trofeos_cod p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%; 
+    text-align: justify; 
+    background-color: goldenrod;
+    border: solid;
+    padding: 2%;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;  
+    margin-left: 5%;
+}
+
+.trofeos_cod img {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+/* Estilo para la tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #000000;
+    color:yellow;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+.cod_equipo {
+    background-color: goldenrod;
+}
+
+audio {
+    display:flow-root;
+    margin: 20px auto;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    box-shadow: 0 5px 25px goldenrod;
+}

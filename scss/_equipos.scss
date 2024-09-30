@@ -1,0 +1,107 @@
+/*Equipos*/
+
+.teams h2{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
+.team-selection {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 20px; 
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.team-item {
+    text-align: center;
+}
+
+.team-item img {
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-item img:hover {
+    opacity: 1;
+    transform: scale(1.05); /* Escala ligeramente la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Añade una sombra para más profundidad */
+}
+
+.team-item a {
+    color: white;    
+}
+
+h3 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;    
+    margin-bottom: 15%;
+}
+
+h3 a:hover {
+    color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+    .team-selection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 20px; 
+        margin: 0 auto;
+        max-width: 768px;
+        padding-bottom: 10%;
+    }
+    .team-item img {
+        width: 100%;
+        max-width: 300px; 
+        border-radius: 10px;
+        opacity: 1;
+    }
+    h3 a {
+        color: black;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-selection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 20px; 
+        margin: 0 auto;
+        max-width: 480px;
+        padding-bottom: 10%;
+    }
+    .team-item img {
+        width: 100%;
+        max-width: 300px; 
+        border-radius: 10px;
+        opacity: 1;
+    }
+    h3 a {
+        color: black;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+}
