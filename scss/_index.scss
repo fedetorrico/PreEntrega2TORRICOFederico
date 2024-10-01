@@ -13,20 +13,21 @@
 }
 
 /* Sección SHOP */
-.index-shop {
-    background-image: url(../img/Fondoshops.jpeg);
+.index-shop {        
+    background-image: url(../img/Fondoshops.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%; 
+    width: 100%;
     height: 65vh;
-    text-align: center; /* Centra el título */
+    text-align: center;
     margin-right: auto;
     background-color: goldenrod;
-    border:  solid black;
+    border: solid black;
     border-radius: 5px;
 }
+
 
 .index-shop h2 {
     font-size: 4rem;
