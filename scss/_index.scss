@@ -14,7 +14,7 @@
 
 /* Sección SHOP */
 .index-shop {        
-    background-image: url(../img/Fondoshops.jpg);
+    background-image: url(../img/Fondoshops2.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,15 +31,15 @@
 
 .index-shop h2 {
     font-size: 4rem;
-    color: purple; /* Color destacado para SHOP */
+    color: whitesmoke; /* Color destacado para SHOP */
     text-align: left;
     padding-top: 16%;
     padding-left: 10%;    
     text-shadow:
-    3px 3px 0px yellow,
-    -3px 3px 0px yellow,
-    3px -3px 0px gold,
-    -3px -3px 0px gold;
+    3px 3px 0px black,
+    -3px 3px 0px black,
+    3px -3px 0px goldenrod,
+    -3px -3px 0px GOLD;
 }
 
 .index-shop h2 a {
@@ -49,6 +49,7 @@
 }
 
 .index-shop button {
+    color: black;    
     display: flex;
     justify-content: left baseline;
     margin-left: 10%;
@@ -95,28 +96,22 @@
     }
     .carousel-item img {
         max-height: 1000px; /* Disminuye la altura de las imágenes en pantallas más pequeñas */
-    }
-    .index-shop-noticias {
-        display:flex;
-        flex-direction: column;
+        margin-bottom: 0;
     }
     .index-shop {
         width: 100%; 
         text-align: center; /* Centra el título */
-        padding: 0;
+        padding-top: 0;
         margin: 0;
-        margin-top: 50px;
         border: solid black;
     }
-    .shop-links a img {
-        width: 30vw;
-        border: outset gold;
-    }
+
     .noticias {
         padding-top: 10%;
         width: 100%;
         border: solid rgb(232, 68, 68);
-        margin-top: auto;
+        margin-top: 0;
+        margin-left: 0;
         text-align: center; /* Centra el título */
     }
 }
@@ -133,12 +128,7 @@
         text-align: center; /* Centra el título */
         padding: 0;
         margin: 0;
-        margin-top: 50px;
         border: solid black;
-    }
-    .shop-links a img {
-        width: 30vw;
-        border: outset gold;
     }
     .noticias {
         padding-top: 10%;

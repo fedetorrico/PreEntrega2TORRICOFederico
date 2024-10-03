@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Jersey+15&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>No te Regales</title>
 </head>
 <body>
@@ -51,27 +55,25 @@
     </header>
     <hr>
     <main>
-        <br>
         <div class="leagueoflegends">
-            <h2>Juego: League Of Legends</h2>
+            <video autoplay muted loop><source src="../videos/LeagueofLegends.mp4" type="video/mp4"></video>            
+            <h1>Juego: League Of Legends</h1>
         </div>
-        <div class="text-start p-4">            
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#musicControlModal">Música</button>
+        <div class="text-start p-4 musicbtn">            
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#musicControlModal"> <img src="../img/sound-svgrepo.svg" alt="iconomusica"> </button>
         </div>
-        <br>
-        <div class="lol_subt">
-            <h3>Sobre la Grieta del Invocador</h3>
-        </div>
-        <div class="sobre-leagueoflegends">
-            <p><b> "League of Legends" es un popular juego MOBA de Riot Games donde dos equipos de cinco jugadores se enfrentan en el mapa "Summoner's Rift" con el objetivo de destruir el Nexo del equipo enemigo. Los jugadores eligen campeones con habilidades únicas y desempeñan roles específicos en líneas y en la jungla. La estrategia involucra controlar objetivos clave, como dragones y el Barón Nashor, y coordinarse con el equipo para obtener oro, mejorar a los campeones y superar al adversario. Con una escena competitiva destacada y una comunidad activa, el juego ofrece una combinación de acción rápida y estrategia profunda.</b></p>
-            <img src="../img/Grieta del Invocador.jpeg" alt="Grieta del Invocador">
+        <div class="lol_subt_sobre">
+            <h3>Sobre la Grieta del Invocador</h3>        
+            <div>
+                <p> "League of Legends" es un popular juego MOBA de Riot Games donde dos equipos de cinco jugadores se enfrentan en el mapa "Summoner's Rift" con el objetivo de destruir el Nexo del equipo enemigo. Los jugadores eligen campeones con habilidades únicas y desempeñan roles específicos en líneas y en la jungla. La estrategia involucra controlar objetivos clave, como dragones y el Barón Nashor, y coordinarse con el equipo para obtener oro, mejorar a los campeones y superar al adversario. Con una escena competitiva destacada y una comunidad activa, el juego ofrece una combinación de acción rápida y estrategia profunda.</p>
+            </div>
         </div>
         <br>
         <div class="lol_subt">
             <h3>Roster y la Liga</h3>
         </div>
         <div class="rosterLOL">
-            <img src="../img/Roster.jpeg" alt="Roster de NTR">
+            <img src="../img/Roster.jfif" alt="Roster de NTR">
             <p><b>Nos complace presentar nuestro nuevo roster de esports dedicado a "League of Legends", un equipo que combina talento, pasión y una visión compartida para alcanzar la grandeza en la escena competitiva. Cada jugador ha sido seleccionado no solo por sus habilidades excepcionales, sino también por su capacidad para trabajar en equipo y adaptarse a las estrategias más avanzadas. Con una preparación meticulosa y una química de equipo impresionante, estamos listos para desafiar a los mejores del mundo y dejar una huella indeleble en el juego. Prepárense para ver una actuación inspiradora y emocionante, ya que nuestro equipo se embarca en esta nueva era con determinación, estrategia y un compromiso inquebrantable con la excelencia. ¡El futuro del juego está aquí y estamos listos para conquistarlo! </b></p>
         </div>
         <br>
@@ -79,10 +81,11 @@
             <h3>League Of Legends: Trofeos</h3>
         </div>
         <div class="trofeos-lol">
-            <img src="../img/Trofeo LOL.jpeg" alt="Trofeos LOL">
+            <video src="../videos/heavyisthecrowm.mp4" autoplay muted loop></video>
             <p><b>Seguidamente les detallamos en un cuadro la cantidad de trofeos que se pudieron conseguir en diferentes tipos de ligas en las que se compitio.</b></p>
         </div>
-        <div>
+        <br>
+        <div class="trofeos_lol_tabla">
             <table>
                 <tr>
                     <th>Juego</th>
@@ -94,7 +97,7 @@
                     <th>League of Legends</th>
                     <th>SIETE (07)</th>
                     <th>TRES (03)</th>
-                    <th>UNO (01) 💛</th>
+                    <th>UNO (01) <img src="../img/playcoin.svg" alt="playcoin.trofeo" data-aos="flip-right" data-aos-duration="15000" data-aos-delay="250" data-aos-easing="ease-in-out"></th>
                 </tr>
             </table>
         </div>
@@ -150,5 +153,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

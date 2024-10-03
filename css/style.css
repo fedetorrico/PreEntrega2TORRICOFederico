@@ -7,7 +7,6 @@
 
 body {
   background: black;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: auto;
   margin: 0;
   color: aliceblue;
@@ -138,6 +137,7 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .hr_footer {
@@ -284,14 +284,14 @@ footer {
 
 /* Sección SHOP */
 .index-shop {
-  background-image: url(../img/Fondoshops.jpeg);
+  background-image: url(../img/Fondoshops2.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
   height: 65vh;
-  text-align: center; /* Centra el título */
+  text-align: center;
   margin-right: auto;
   background-color: goldenrod;
   border: solid black;
@@ -300,11 +300,11 @@ footer {
 
 .index-shop h2 {
   font-size: 4rem;
-  color: purple; /* Color destacado para SHOP */
+  color: whitesmoke; /* Color destacado para SHOP */
   text-align: left;
   padding-top: 16%;
   padding-left: 10%;
-  text-shadow: 3px 3px 0px yellow, -3px 3px 0px yellow, 3px -3px 0px gold, -3px -3px 0px gold;
+  text-shadow: 3px 3px 0px black, -3px 3px 0px black, 3px -3px 0px goldenrod, -3px -3px 0px GOLD;
 }
 
 .index-shop h2 a {
@@ -314,6 +314,7 @@ footer {
 }
 
 .index-shop button {
+  color: black;
   display: flex;
   justify-content: left baseline;
   margin-left: 10%;
@@ -358,28 +359,21 @@ footer {
   }
   .carousel-item img {
     max-height: 1000px; /* Disminuye la altura de las imágenes en pantallas más pequeñas */
-  }
-  .index-shop-noticias {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 0;
   }
   .index-shop {
     width: 100%;
     text-align: center; /* Centra el título */
-    padding: 0;
+    padding-top: 0;
     margin: 0;
-    margin-top: 50px;
     border: solid black;
-  }
-  .shop-links a img {
-    width: 30vw;
-    border: outset gold;
   }
   .noticias {
     padding-top: 10%;
     width: 100%;
     border: solid rgb(232, 68, 68);
-    margin-top: auto;
+    margin-top: 0;
+    margin-left: 0;
     text-align: center; /* Centra el título */
   }
 }
@@ -396,12 +390,7 @@ footer {
     text-align: center; /* Centra el título */
     padding: 0;
     margin: 0;
-    margin-top: 50px;
     border: solid black;
-  }
-  .shop-links a img {
-    width: 30vw;
-    border: outset gold;
   }
   .noticias {
     padding-top: 10%;
@@ -1298,51 +1287,90 @@ audio {
 }
 
 /*EQUIPOS: Lol*/
+main {
+  margin-top: 122px;
+}
+
 .leagueoflegends {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-top: 0%;
+  margin-bottom: 0;
+  display: flex; /* Activamos flexbox */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
   color: black;
   text-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
+}
+
+.leagueoflegends h1 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Estilo del video */
+.leagueoflegends video {
+  position: absolute;
+  left: 20%;
+  width: 100%;
+  transform: translate(-20%, -20%);
+  z-index: 1;
+  opacity: 0.9; /* Puedes ajustar la opacidad si quieres */
+  border: solid gold;
+  border-bottom: solid goldenrod;
 }
 
 .lol_subt {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1000px;
   margin-bottom: 20px;
-  color: black;
+  color: whitesmoke;
   text-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
 }
 
-.sobre-leagueoflegends {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
+.lol_subt_sobre {
+  background-image: url(../img/banner_lol.PNG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 65vh;
+  z-index: 1;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
 }
 
-.sobre-leagueoflegends p {
-  background-color: goldenrod;
-  border: solid black;
-  padding: 2%;
-  border-radius: 10px;
-  width: 50%;
+.lol_subt_sobre h3 {
+  color: white;
+  padding-top: 15%;
+  text-decoration: solid;
+  font-size: 2rem;
+  text-shadow: 3px 3px 0px black;
+}
+
+.lol_subt_sobre p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20%;
+  width: 75%;
   text-align: justify;
-  color: black;
+  color: whitesmoke;
   font-size: 1.1rem;
   line-height: 1.8;
-}
-
-.sobre-leagueoflegends img {
-  box-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
-  width: 400px;
-  border-radius: 10px;
-  margin: 3%;
+  text-shadow: 3px 3px 0px black;
 }
 
 .rosterLOL {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 20px;
 }
@@ -1362,13 +1390,13 @@ audio {
 .rosterLOL img {
   box-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
   margin: 3%;
-  width: 400px;
+  width: 450px;
   border-radius: 10px;
 }
 
 .trofeos-lol {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 20px;
 }
@@ -1385,11 +1413,29 @@ audio {
   line-height: 1.8;
 }
 
-.trofeos-lol img {
+.trofeos-lol video {
+  border-radius: 50%; /* Forma circular */
   box-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
-  margin: 3%;
-  width: 500px;
-  border-radius: 10px;
+  width: 300px; /* Ancho fijo */
+  height: 300px; /* Alto fijo */
+  object-fit: cover; /* Asegura que el video llene el contenedor sin deformarse */
+}
+
+/* Personaliza la duración solo para la animación flip */
+.custom-animation {
+  --animate-duration: 3.5s; /* Ajusta la duración de la animación aquí */
+}
+
+.musicbtn {
+  color: gold;
+  position: fixed;
+  flex-wrap: wrap;
+  bottom: 20px;
+  right: 20px;
+}
+
+.musicbtn img {
+  width: 30px;
 }
 
 @media screen and (max-width: 768px) {
