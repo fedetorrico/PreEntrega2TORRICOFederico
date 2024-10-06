@@ -80,7 +80,7 @@ main{
     width: 75%; 
     text-align: justify; 
     color: whitesmoke;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     line-height: 1.8;
     text-shadow:
     3px 3px 0px black;
@@ -164,29 +164,42 @@ main{
 }
 
 @media screen and (max-width: 768px) {
-    .sobre-leagueoflegends{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .leagueoflegends {
+        position: relative;
+        width: 100%;
+        height: 35vh;
+    }
+
+    .lol_subt_sobre {    
+        width: 100%;
+        height: 65vh;    
+        z-index: 1;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: black;
     }
     
-    .sobre-leagueoflegends p {
+    .lol_subt_sobre h3 {
+        color: white;
+        padding-top: 10%;
+        text-decoration: solid;
+        font-size: 2.4rem;    
+        text-shadow:
+        3px 3px 0px black;
+    }
+    
+    .lol_subt_sobre p { 
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content:flex-start;
         align-items: center;
-        padding: 4%;
-        margin-top: 2%;
         width: 85%; 
-    }
-    
-    .sobre-leagueoflegends img {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 600px;
+        text-align: justify; 
+        color: whitesmoke;
+        font-size: 0.9rem;
+        line-height: 1.8;
+        text-shadow:
+        3px 3px 0px black;
     }
     
     .rosterLOL {
@@ -247,29 +260,57 @@ main{
     
 }
 @media screen and (max-width: 480px) {
-    .sobre-leagueoflegends{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    main{
+        margin-top: 89px;
+    }
+    .leagueoflegends {
+        position: relative;
+        width: 100%;
+        height: 40vh;
     }
     
-    .sobre-leagueoflegends p {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 4%;
-        margin-top: 2%;
-        width: 85%; 
+.leagueoflegends video {
+    position: absolute;
+    left: 20%;
+    width: 180%;
+    transform: translate(-20%, -20%);
+    z-index: 1;
+    opacity: 0.9; /* Puedes ajustar la opacidad si quieres */
+    border: solid gold;
+    border-bottom: solid goldenrod;
+}
+
+    .lol_subt_sobre {    
+        width: 100%;
+        height: 65vh;    
+        z-index: 1;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: black;
     }
-    
-    .sobre-leagueoflegends img {
+
+    .lol_subt_sobre h3 {
+        color: white;
+        padding-top: 10%;
+        text-decoration: solid;
+        font-size: 2.4rem;    
+        text-shadow:
+        3px 3px 0px black;
+    }
+
+    .lol_subt_sobre p { 
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
+        justify-content:flex-start;
+        align-items: justify;
+        width: 100%;
+        padding-right: 20%;
+        text-align:center; 
+        color: whitesmoke;
+        font-size: 0.7rem;
+        line-height: 1.8;
+        text-shadow:
+        3px 3px 0px black;
     }
     
     .rosterLOL {

@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Jersey+15&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>No te Regales</title>
 </head>
 <body>
@@ -53,23 +54,21 @@
         </nav>
     </header>
     <hr>
-    <main>        
-        <br>
-        <div class="callofduty">
-            <h2>Juego: Call Of Duty</h2>
+    <main>       
+        
+        <div class="callofduty">            
+            <video autoplay muted loop><source src="../videos/CallofDuty.mp4" type="video/mp4"></video>
+            <h1>Juego: Call Of Duty</h1>      
+        </div>      
+        <div class="text-start p-4 musicbtn">            
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#musicControlModal"> <img src="../img/sound-svgrepo.svg" alt="iconomusica"> </button>
         </div>
-        <div class="text-start p-4">            
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#musicControlModal">Música</button>
-        </div>
-        <br>
         <div>
-            <div class="cod">
-                <h3>Sobre Call Of Duty</h3>
-            </div>
-            <br>
             <div class="sobre-callofduty">
-                <p>"Call of Duty" es una serie de videojuegos de disparos en primera persona que ha redefinido el género desde su lanzamiento inicial en 2003. Conocida por su intenso combate y su narrativa cinematográfica, la serie ofrece una variedad de campañas épicas ambientadas en diferentes periodos históricos y escenarios modernos. Cada entrega presenta una jugabilidad adictiva, modos multijugador competitivos y una experiencia inmersiva, consolidándose como una de las franquicias más influyentes en el mundo de los videojuegos.</p>
-                <img src="../img/Call Of Duty.jpeg" alt="Call Of Duty">
+                <h3>Sobre Call Of Duty</h3>
+                <div>    
+                    <p>"Call of Duty" es una serie de videojuegos de disparos en primera persona que ha redefinido el género desde su lanzamiento inicial en 2003. Conocida por su intenso combate y su narrativa cinematográfica, la serie ofrece una variedad de campañas épicas ambientadas en diferentes periodos históricos y escenarios modernos. Cada entrega presenta una jugabilidad adictiva, modos multijugador competitivos y una experiencia inmersiva, consolidándose como una de las franquicias más influyentes en el mundo de los videojuegos.</p>
+                </div>
             </div>
             <br>
             <div class="cod">
@@ -87,6 +86,7 @@
             <br>
             <div class="trofeos_cod">
                 <p>Seguidamente les detallamos en un cuadro la cantidad de trofeos que se pudieron conseguir en diferentes tipos de ligas en las que se compitio.</p>
+                <video src="../videos/codleague.mp4" autoplay muted loop></video>
             </div>
             <br>    
             <div>
@@ -101,14 +101,20 @@
                         <th>Call Of Duty</th>
                         <th>SIETE (07)</th>
                         <th>DIEZ (10)</th>
-                        <th>SEIS (06)💛🖤💛🖤💛🖤 </th>
+                        <th>SEIS (06)
+                            <br>
+                            <img width="100px" src="../img/playcoin.svg" alt="playcoin.trofeo" data-aos="flip-right" data-aos-duration="15000" data-aos-delay="250" data-aos-easing="ease-in-out">
+                            <img width="100px" src="../img/playcoin.svg" alt="playcoin.trofeo" data-aos="flip-right" data-aos-duration="15000" data-aos-delay="250" data-aos-easing="ease-in-out">
+                            <img width="100px" src="../img/playcoin.svg" alt="playcoin.trofeo" data-aos="flip-right" data-aos-duration="15000" data-aos-delay="250" data-aos-easing="ease-in-out">
+                            <br>
+                            <img width="100px" src="../img/playcoin.svg" alt="playcoin.trofeo" data-aos="flip-right" data-aos-duration="15000" data-aos-delay="250" data-aos-easing="ease-in-out">
+                            <img width="100px" src="../img/playcoin.svg" alt="playcoin.trofeo" data-aos="flip-right" data-aos-duration="15000" data-aos-delay="250" data-aos-easing="ease-in-out">
+                            <img width="100px" src="../img/playcoin.svg" alt="playcoin.trofeo" data-aos="flip-right" data-aos-duration="15000" data-aos-delay="250" data-aos-easing="ease-in-out">
+                        </th>
                     </tr>           
                 </table>
             </div>
             <br>
-            <div class="trofeos_cod">
-                <img src="../img/Call Of Duty trophy.jpg_large" alt="Trofeos COD">
-            </div>
             </div>
             </div>
             <br>
@@ -163,5 +169,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
