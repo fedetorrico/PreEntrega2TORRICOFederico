@@ -147,11 +147,6 @@ main{
     object-fit: cover; /* Asegura que el video llene el contenedor sin deformarse */
 }
 
-/* Personaliza la duración solo para la animación flip */
-.custom-animation {
-    --animate-duration: 3.5s; /* Ajusta la duración de la animación aquí */    
-}
-
 .musicbtn {
     color: gold;
     position:fixed;
@@ -257,8 +252,8 @@ main{
         width: 500px;
         border-radius: 10px;
     }
-    
 }
+
 @media screen and (max-width: 480px) {
     main{
         margin-top: 89px;
@@ -272,10 +267,10 @@ main{
 .leagueoflegends video {
     position: absolute;
     left: 20%;
-    width: 180%;
+    width: 200%;
     transform: translate(-20%, -20%);
     z-index: 1;
-    opacity: 0.9; /* Puedes ajustar la opacidad si quieres */
+    opacity: 1; /* Puedes ajustar la opacidad si quieres */
     border: solid gold;
     border-bottom: solid goldenrod;
 }
@@ -368,5 +363,4 @@ main{
         width: 450px;
         border-radius: 10px;
     }
-    
 }

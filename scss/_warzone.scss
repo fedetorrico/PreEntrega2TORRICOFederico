@@ -2,8 +2,8 @@
 main {
     margin-top: 99px;
     margin-bottom: 0;
-  }
-  .warzone {
+}
+.warzone {
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -21,13 +21,13 @@ main {
     -3px 3px 0px goldenrod,
     3px -3px 0px gold,
     -3px -3px 0px gold;
-  }
-  .warzone h1 {    
+}
+.warzone h1 {    
     position: relative;
     z-index: 2;
-  }
+}
   /* Estilo del video */
-  .warzone video {
+.warzone video {
     position: absolute;
     left: 20%;
     width: 100%;
@@ -36,25 +36,25 @@ main {
     opacity: 0.9; /* Puedes ajustar la opacidad si quieres */
     border: solid gold;
     border-bottom: solid goldenrod;
-  }
-  
-  .sobre_warzone {
+}
+
+.sobre_warzone {
     background-image: url(../img/Warzone\ juego.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;  
-  }
-  
-  .sobre_wz {
+}
+
+.sobre_wz {
     width: 100%;
     height: 65vh;    
     text-align: center;
     font-size: 2.5rem;
     color: black;
-  }
-  
-  .sobre_wz h3 {
+}
+
+.sobre_wz h3 {
     color: black;
     padding-top: 4%;
     margin-bottom: 2%;
@@ -65,9 +65,9 @@ main {
     -3px 3px 0px goldenrod,
     3px -3px 0px gold,
     -3px -3px 0px gold;
-  }
-  
-  .sobre_wz p { 
+}
+
+.sobre_wz p { 
     justify-content: center;
     align-items: center;
     padding: 2%;

@@ -117,6 +117,12 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .hr_footer{
+        width: 450px;
+    }
+    footer {
+        width: 450px;
+    }
     .container-patrocinadores{
         display: flex;
         flex-direction: column;
