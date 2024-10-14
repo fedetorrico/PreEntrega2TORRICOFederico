@@ -1,5 +1,6 @@
 /*FOOTER*/
 footer {
+    margin-top: auto;
     display: flex;
     flex-direction:column;
     color: white;
@@ -10,10 +11,12 @@ footer {
     justify-content: center;
     align-items: center;    
     font-family: "Poppins", sans-serif;
+    width: auto;
 }
 
 .hr_footer{
-    margin: 0;
+    margin: auto;
+    width: auto;
 }
 
 .container{
@@ -85,6 +88,13 @@ footer {
 /*Responsive en 768px y 840px*/
 
 @media screen and (max-width: 768px) {
+    
+    .hr_footer{
+        width: auto 0;
+    }
+    footer {
+        width: auto 0;
+    }
     .container-patrocinadores{
         display: flex;
         flex-direction: row;
@@ -118,10 +128,12 @@ footer {
 
 @media screen and (max-width: 480px) {
     .hr_footer{
-        width: 450px;
+        width: 100vw;
     }
     footer {
-        width: 450px;
+        padding: 0;
+        margin: 0;
+        width: auto;
     }
     .container-patrocinadores{
         display: flex;

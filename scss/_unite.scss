@@ -73,6 +73,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .unite h2{ 
+        margin-top: 5%;
+    }
+
     .unite_logo-formulario {
         display: flex; /* Usamos Flexbox para alinear los elementos en línea */
         flex-direction: column;
@@ -102,13 +106,16 @@
 }
 
 @media screen and (max-width: 480px) {
+    .unite h2{ 
+        font-size: 2rem;
+    }
+
     .unite_logo-formulario {
         display: flex; /* Usamos Flexbox para alinear los elementos en línea */
         flex-direction: column;
         justify-content: center; /* Separa el formulario y la imagen a los extremos */
         align-items: center; /* Alinea ambos elementos en la parte superior */
         gap: 20px; /* Añade espacio entre el formulario y la imagen */
-        margin: 20px;
     }
     .formulario {
         width: 80%; 
@@ -119,12 +126,12 @@
     }
     .formulario input[type="submit"],
     .formulario input[type="reset"] {
-    padding: 15px 25px;
-    margin-bottom: 5%;
-    background-color: goldenrod; 
-    color: white;
-    border: none;
-    border-radius: 5px;
+        padding: 15px 25px;
+        margin-bottom: 5%;
+        background-color: goldenrod; 
+        color: white;
+        border: none;
+        border-radius: 5px;
     }
     .unite_logo img {
         margin: 22%;

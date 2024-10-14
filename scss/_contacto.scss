@@ -32,6 +32,9 @@
 /*RESPONSIVE CONTACTO*/
 
 @media screen and (max-width: 768px) {
+    .contactate h2{
+        margin-top: 12%;
+    }
     .contactate_logo-formulario{
         display: flex; /* Usamos Flexbox para alinear los elementos en línea */
         flex-direction: column;
@@ -42,7 +45,8 @@
     }
     .cotactate_logo img {
         flex-direction: column;
-        width: 100%; 
+        align-items: center;
+        width: 80vw; 
         max-width: 768px; 
         border: 5px solid goldenrod; 
         border-radius: 10px; 
@@ -51,6 +55,9 @@
     }
 }
 @media screen and (max-width: 480px) {
+    .contactate h2{
+        margin-top: 0%;
+    }
     .contactate_logo-formulario{
         display: flex; /* Usamos Flexbox para alinear los elementos en línea */
         flex-direction: column;
@@ -61,7 +68,7 @@
     }
     .cotactate_logo img {
         flex-direction: column;
-        width: 100%; 
+        width: 80vw; 
         max-width: 480px; 
         border: 5px solid goldenrod; 
         border-radius: 10px; 

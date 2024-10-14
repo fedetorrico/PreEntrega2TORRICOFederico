@@ -26,7 +26,7 @@
 .lista_Desordenada {
     display: flex;
     justify-content:end;
-    gap: 15px;
+    gap: 10px;
     margin-left: auto;
     margin-right: auto;
     align-items: end;
@@ -35,7 +35,7 @@
 .nav-link {
     color: goldenrod;
     padding: 10px 20px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .nav-link:hover {
@@ -82,13 +82,14 @@
 }
 
 @media screen and (max-width: 480px) {
+    .colornav {
+        padding: 0;
+        margin: auto 0;
+        width: 100vw;
+    }
     .lista_Desordenada {
         flex-direction: column;
         align-items:end;
-    }
-    .colornav {
-        padding: 0%;
-        margin: 0%;
     }
     .container-fluid a img{
         width: 20vw;

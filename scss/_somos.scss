@@ -12,6 +12,18 @@
     margin-bottom: 30px;
 }
 
+.somos_sob_nos {    
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+    margin-bottom: 30px;
+}
+
 /* Contenedor de texto y video */
 .somos-video-text {
     background-color: #ffcc00;
@@ -85,6 +97,14 @@
 /*RESPONSIVE SOMOS*/
 
 @media screen and (max-width: 768px) {
+    .somos h2 {
+        margin-top: 8%;
+    }
+
+    .somos_sob_nos h2 { 
+        font-size: 3rem;
+    }
+
     .somos-video-text {
         display: flex;
         flex-direction: column;
@@ -144,19 +164,30 @@
     }
 }
 @media screen and (max-width: 480px) {
+    
+    .somos h2 {
+        margin-top: 4%;
+    }
+
+    .somos_sob_nos h2 { 
+        margin-top: 0;
+        font-size: 2rem;
+    }
+
+
     .somos-video-text {
         display: flex;
         flex-direction: column;
         justify-content:center;
-        padding: 10px;
-        margin: 25px;
+        padding: 0;
+        margin: 0;
         align-items:center;
-        max-width: 480px; 
+        max-width: 100vw; 
     }
     .text-somos {
         width: 90%;
         text-align: justify; 
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         line-height: 2;
         color: #000000;
     }
@@ -170,9 +201,9 @@
         justify-content: center; /* Distribuye los elementos en todo el ancho */
         align-items: center; /* Alinea verticalmente en el centro */
         gap: 10px; /* Espacio entre los elementos */
-        padding: 10px; /* Margen interno */
-        margin: 25px; /* Centra el contenedor horizontalmente */
-        max-width: 480px; /* Limita el ancho máximo del contenedor */
+        padding: 0; /* Margen interno */
+        margin: 0; /* Centra el contenedor horizontalmente */
+        max-width: 100vw; /* Limita el ancho máximo del contenedor */
         background-color: #ffcc00;
         border: solid black;
         border-radius: 10px;
@@ -182,7 +213,7 @@
         width: 78%; 
         text-align: justify; 
         color: black;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         line-height: 2;
     }
     .lema {
@@ -190,13 +221,12 @@
         text-align: center; 
         color: red;
         font-style: italic;
-        font-size: 2rem;
+        font-size: 1rem;
         line-height: 2;
     }
     
     .somos_logontr img {
-        width: 250px;  
-        height: 250px;
+        width: 95VW;  
         border-radius: 10px; 
         border: 2px solid goldenrod;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 

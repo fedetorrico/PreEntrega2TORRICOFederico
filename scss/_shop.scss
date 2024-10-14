@@ -1,7 +1,7 @@
 /*SHOP*/
 
 /* Título de la sección */
-.shop h2 {    
+.shop h2 {   
     text-align: center;
     font-size: 3rem;
     color: black;
@@ -28,6 +28,7 @@
 /* Estilo de las camisetas */
 .camiseta {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center; /* Centra los elementos dentro de cada camiseta */
     width: 30%; /* Cada camiseta ocupa el 30% del contenedor */
@@ -76,6 +77,10 @@ select {
 /*RESPONSIVE SHOP*/
 
 @media (max-width: 768px) {
+    .shop h2 {
+        margin-top: 5%;
+    }
+
     .productos {
         max-width: 100%; 
         gap: 15px; 
@@ -91,7 +96,11 @@ select {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) {    
+    .shop h2 {
+        margin: 1%;
+    }
+    
     .productos {
         flex-direction: column; 
         gap: 10px; 

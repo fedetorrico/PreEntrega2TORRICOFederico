@@ -1,14 +1,14 @@
 /*JUEGO: WARZONE*/
 main {
-    margin-top: 99px;
+    margin-top: 34px;
     margin-bottom: 0;
 }
 .warzone {
     position: relative;
     overflow: hidden;
     text-align: center;
-    width: 100%;
-    height: 60vh;
+    width: auto;
+    height: 35vh;
     font-size: 2.5rem;
     margin-top: 0%;
     margin-bottom: 0;
@@ -30,7 +30,7 @@ main {
 .warzone video {
     position: absolute;
     left: 20%;
-    width: 100%;
+    width: 100vw;
     transform: translate(-20%, 5%);
     z-index: 1;
     opacity: 0.9; /* Puedes ajustar la opacidad si quieres */
@@ -48,7 +48,6 @@ main {
 
 .sobre_wz {
     width: 100%;
-    height: 65vh;    
     text-align: center;
     font-size: 2.5rem;
     color: black;
@@ -80,6 +79,10 @@ main {
     color: black;
     font-size: 1.2rem;
     line-height: 1.8;
+  }
+
+  .roster_wz h3 {
+    margin: auto;
   }
   
   .roster_liga_wz {
@@ -127,15 +130,17 @@ main {
   }
   
   @media screen and (max-width:768px) {
-    main {
-      margin-top: 0;
+    .warzone {
+      margin-top: -50px;
+      width: 100vw;
+      height: 45vh;
     }
     .warzone video {
       width: 170%;
       margin-bottom: 0;
     }
     .sobre_wz {
-      margin-bottom: 50%;
+      margin-bottom: 15%;
     }
     .roster_wz {
       margin-top: 10%;
@@ -155,18 +160,32 @@ main {
   }
   
   @media screen and (max-width:480px) {
-    main {
-        margin-top: -10px;
+    .warzone {
+      margin-top: -80px;
+      margin-left: -28px;
+      width: auto;
+      height: 35vh;
     }
     .warzone video {
-        width: 210%;    
+        width: auto;    
         transform: translate(-35%, -5%);
     }
-    .sobre_wz {
-        margin-bottom: 70%;
+    
+    .sobre_warzone {
+      width: auto 100vw;
     }
+
+    .sobre_wz {
+        margin:auto;
+    }
+    .sobre_wz p{
+      margin-left: 25px;
+      width: 90vw;
+      font-size: 0.92rem;
+      margin-bottom: auto;
+  }
     .roster_wz {
-        margin-top: 30%;
+        margin-top: auto;
         margin-bottom: 4%;
     }
     .roster_liga_wz {

@@ -3,11 +3,12 @@
 .callofduty {
     position: relative;
     width: 100%;
-    height: 60vh;
+    max-width: 100%;
+    height: 30vh;
     overflow: hidden;
     text-align: center;
     font-size: 2.5rem;
-    margin-top: 0%;
+    margin-top: 80px;
     margin-bottom: 0;
     display: flex; /* Activamos flexbox */
     justify-content: center; /* Centrado horizontal */
@@ -28,7 +29,8 @@
     position: absolute;
     left: 20%;
     width: 100%;
-    transform: translate(-20%, -5%);
+    max-width: 100%;
+    transform: translate(-20%, 5%);
     z-index: 1;
     opacity: 0.9; /* Puedes ajustar la opacidad si quieres */
     border: solid gold;
@@ -47,18 +49,6 @@
     color: gold;
 }
 
-.warzone h3 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: black;
-    text-shadow:
-    3px 3px 0px goldenrod,
-    -3px 3px 0px goldenrod,
-    3px -3px 0px gold,
-    -3px -3px 0px gold;
-}
-
 /* Sección de 'Sobre Call of Duty' */
 .sobre-callofduty {  
     background-image: url(../img/Call\ Of\ Duty.jpeg);
@@ -67,7 +57,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    height: 65vh;    
+    height: 50vh;    
     z-index: 1;
     text-align: center;
     font-size: 2.5rem;
@@ -120,10 +110,45 @@
     font-size: 1.2rem;
     line-height: 1.8;
 }
+
+/* Sección de 'Trofeos' */
+
+.cod h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-shadow:
+    3px 3px 0px goldenrod,
+    -3px 3px 0px goldenrod,
+    3px -3px 0px gold,
+    -3px -3px 0px gold;
+}
+
+
+.trofeos_cod p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%; 
+    text-align: justify; 
+    background-color: goldenrod;
+    border: solid;
+    padding: 2%;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;  
+    margin-left: 5%;
+}
+
 .trofeos_cod {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     margin: 20px;
 }
 
@@ -151,12 +176,44 @@
     height: 300px; /* Alto fijo */
     object-fit: cover; /* Asegura que el video llene el contenedor sin deformarse */
 }
+
+/* Estilo para la tabla */
+table {
+    width: auto 0;
+    justify-content: center;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    padding: 12px;
+    border: 1px solid white;
+}
+
+table th {
+    background-color: #000000;
+    color:yellow;
+}
+
+table tr:nth-child(even) {
+    background-color: goldenrod;
+}
+
+table tr:hover {
+    background-color: #000000;
+}
+
 /*RESPONSIVE*/
 @media screen and (max-width: 768px) {
     .callofduty {
         position: relative;
         width: 100%;
-        height: 35vh;
+        height: 25vh;
+        margin-top: 15px;
     }
 
     .sobre-callofduty  {    
@@ -220,27 +277,24 @@
         font-size: 1.2rem;
         line-height: 1.8;
     }
+    table {
+        width: 80%;
+    }
 }
 @media screen and (max-width:480px ) {
-    main {
-        margin-top: 89px;
-    }
     .callofduty {
-        position: relative;
-        width: 100%;
-        height: 35vh;
-    }
-
-    .callofduty video{
-        transform: translate(-20%, -5%);
+        width: 100vw;
+        max-width: 100%;
+        height: 17vh;
+        margin-top: -25px;
     }
 
     .sobre-callofduty  {    
-        width: 100%;
-        height: 85vh;    
+        width: 100vw;
+        height: 65vh;    
         z-index: 1;
         text-align: center;
-        font-size: 2.0rem;
+        font-size: 2.5rem;
         margin-bottom: 20px;
         color: black;
     }
@@ -249,22 +303,20 @@
         color: white;
         padding-top: 10%;
         text-decoration: solid;
-        font-size: 2.4rem;    
+        font-size: 2.2rem;    
         text-shadow:
         3px 3px 0px black;
     }
     
     .sobre-callofduty p { 
         display: flex;
-        justify-content:left;
+        justify-content:flex-start;
         align-items: center;
-        width: 90%; 
+        width: 85%; 
         text-align: justify; 
-        padding-top: 10%;
-        padding-right: 10%;
         color: whitesmoke;
         font-size: 0.9rem;
-        line-height: 1.8;
+        line-height: 1.5;
         text-shadow:
         3px 3px 0px black;
     }
@@ -275,7 +327,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 20px;
+        width: 100vw;
+        margin: 0;
     }
     
     .roster-liga img {
@@ -283,7 +336,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 60%;
+        width: 80vw;
         border-radius: 10px;
         padding-top: 10%;        
         padding-bottom: 10%;
@@ -298,12 +351,17 @@
         font-size: 1.2rem;
         line-height: 1.8;
     }
+    
+    .cod h3 {
+        font-size: 1.5rem;
+    }
 
     .trofeos_cod {
         display:flex;
         flex-direction: column;
         align-items:center;
-        margin: 20px;
+        width: 100vw;
+        margin: 0;
     }
     
     .trofeos_cod p {
@@ -312,7 +370,7 @@
         padding: 5%;
         margin-right: 5%;
         border-radius: 10px;
-        width: 45%;         
+        width: 80%;         
         align-items:center;
         text-align: justify; 
         color: black;
@@ -328,87 +386,33 @@
             -3px 3px 0px goldenrod,
             3px -3px 0px gold,
             -3px -3px 0px gold;
-        width: 300px; /* Ancho fijo */
-        height: 300px; /* Alto fijo */
+        width: 200px; /* Ancho fijo */
+        height: 200px; /* Alto fijo */
         object-fit: cover; /* Asegura que el video llene el contenedor sin deformarse */
+    }
+    .trofeos_cod_tabla {
+        display: block;
+        width: 100%;
+    }
+
+    .trofeos_cod_tabla tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .trofeos_cod_tabla th {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .trofeos_cod_tabla th img {
+        display: block;
+        margin-top: 10px;
     }
 }
 
-/* Sección de 'Trofeos' */
 
-.cod h3 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: black;
-    text-shadow:
-    3px 3px 0px goldenrod,
-    -3px 3px 0px goldenrod,
-    3px -3px 0px gold,
-    -3px -3px 0px gold;
-}
 
-.trofeos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
 
-.trofeos_cod p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 85%; 
-    text-align: justify; 
-    background-color: goldenrod;
-    border: solid;
-    padding: 2%;
-    color: black;
-    font-size: 1.2rem;
-    line-height: 1.8;  
-    margin-left: 5%;
-}
-
-/* Estilo para la tabla */
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-table th, table td {
-    padding: 12px;
-    border: 1px solid #ddd;
-}
-
-table th {
-    background-color: #000000;
-    color:yellow;
-}
-
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-table tr:hover {
-    background-color: #ddd;
-}
-.cod_equipo {
-    background-color: goldenrod;
-}
-
-audio {
-    display:flow-root;
-    margin: 20px auto;
-    width: 80%;
-    height: 50px;
-    border-radius: 5px;
-    background-color: black;
-    box-shadow: 0 5px 25px goldenrod;
-}

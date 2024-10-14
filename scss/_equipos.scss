@@ -57,6 +57,9 @@ h3 a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .teams h2 {
+        margin-top: 30%;
+    }
     .team-selection {
         display: flex;
         flex-direction: column;
@@ -82,19 +85,19 @@ h3 a:hover {
 }
 
 @media screen and (max-width: 480px) {
+    .teams h2 {
+        margin-top: auto;
+        align-content: center;
+    }
     .team-selection {
         display: flex;
         flex-direction: column;
         justify-content: center; 
         align-items: center;
         gap: 20px; 
-        margin: 0 auto;
-        max-width: 480px;
         padding-bottom: 10%;
     }
     .team-item img {
-        width: 100%;
-        max-width: 300px; 
         border-radius: 10px;
         opacity: 1;
     }

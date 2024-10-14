@@ -55,7 +55,7 @@ main {
 .lista_Desordenada {
   display: flex;
   justify-content: end;
-  gap: 15px;
+  gap: 10px;
   margin-left: auto;
   margin-right: auto;
   align-items: end;
@@ -64,7 +64,7 @@ main {
 .nav-link {
   color: goldenrod;
   padding: 10px 20px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .nav-link:hover {
@@ -110,13 +110,14 @@ main {
   }
 }
 @media screen and (max-width: 480px) {
+  .colornav {
+    padding: 0;
+    margin: auto 0;
+    width: 100vw;
+  }
   .lista_Desordenada {
     flex-direction: column;
     align-items: end;
-  }
-  .colornav {
-    padding: 0%;
-    margin: 0%;
   }
   .container-fluid a img {
     width: 20vw;
@@ -128,6 +129,7 @@ main {
 
 /*FOOTER*/
 footer {
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   color: white;
@@ -138,10 +140,12 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  width: auto;
 }
 
 .hr_footer {
-  margin: 0;
+  margin: auto;
+  width: auto;
 }
 
 .container {
@@ -212,6 +216,12 @@ footer {
 
 /*Responsive en 768px y 840px*/
 @media screen and (max-width: 768px) {
+  .hr_footer {
+    width: auto 0;
+  }
+  footer {
+    width: auto 0;
+  }
   .container-patrocinadores {
     display: flex;
     flex-direction: row;
@@ -244,10 +254,12 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .hr_footer {
-    width: 450px;
+    width: 100vw;
   }
   footer {
-    width: 450px;
+    padding: 0;
+    margin: 0;
+    width: auto;
   }
   .container-patrocinadores {
     display: flex;
@@ -384,30 +396,45 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
-  .carousel-item img {
-    max-height: 700px; /* Disminuye la altura de las imágenes en pantallas más pequeñas */
+  .carousel {
+    width: 100vw;
+    text-align: center; /* Centra el título */
+    margin: 0;
   }
-  .index-shop-noticias {
-    display: flex;
-    flex-direction: column;
+  .carousel-item img {
+    width: auto;
+    max-height: 100vh; /* Disminuye la altura de las imágenes en pantallas más pequeñas */
+    margin-bottom: 0;
   }
   .index-shop {
-    width: 100%;
+    width: 100vw;
     text-align: center; /* Centra el título */
-    padding: 0;
-    margin: 0;
+    padding-top: 0;
     border: solid black;
+  }
+  .index-shop h2 {
+    font-size: 1.8rem;
   }
   .noticias {
     padding-top: 10%;
+    padding-left: 0;
     width: 100%;
     border: solid rgb(232, 68, 68);
-    margin-top: auto;
+    margin-top: 0;
+    margin-left: 0;
     text-align: center; /* Centra el título */
   }
 }
 /*SOMOS*/
 .somos h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  text-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
+  margin-bottom: 30px;
+}
+
+.somos_sob_nos {
   text-align: center;
   font-size: 3rem;
   color: black;
@@ -486,6 +513,12 @@ footer {
 
 /*RESPONSIVE SOMOS*/
 @media screen and (max-width: 768px) {
+  .somos h2 {
+    margin-top: 8%;
+  }
+  .somos_sob_nos h2 {
+    font-size: 3rem;
+  }
   .somos-video-text {
     display: flex;
     flex-direction: column;
@@ -544,19 +577,26 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
+  .somos h2 {
+    margin-top: 4%;
+  }
+  .somos_sob_nos h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
   .somos-video-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
-    margin: 25px;
+    padding: 0;
+    margin: 0;
     align-items: center;
-    max-width: 480px;
+    max-width: 100vw;
   }
   .text-somos {
     width: 90%;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     line-height: 2;
     color: #000000;
   }
@@ -570,9 +610,9 @@ footer {
     justify-content: center; /* Distribuye los elementos en todo el ancho */
     align-items: center; /* Alinea verticalmente en el centro */
     gap: 10px; /* Espacio entre los elementos */
-    padding: 10px; /* Margen interno */
-    margin: 25px; /* Centra el contenedor horizontalmente */
-    max-width: 480px; /* Limita el ancho máximo del contenedor */
+    padding: 0; /* Margen interno */
+    margin: 0; /* Centra el contenedor horizontalmente */
+    max-width: 100vw; /* Limita el ancho máximo del contenedor */
     background-color: #ffcc00;
     border: solid black;
     border-radius: 10px;
@@ -582,7 +622,7 @@ footer {
     width: 78%;
     text-align: justify;
     color: black;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     line-height: 2;
   }
   .lema {
@@ -590,12 +630,11 @@ footer {
     text-align: center;
     color: red;
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 2;
   }
   .somos_logontr img {
-    width: 250px;
-    height: 250px;
+    width: 95VW;
     border-radius: 10px;
     border: 2px solid goldenrod;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -626,6 +665,7 @@ footer {
 /* Estilo de las camisetas */
 .camiseta {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center; /* Centra los elementos dentro de cada camiseta */
   width: 30%; /* Cada camiseta ocupa el 30% del contenedor */
@@ -672,6 +712,9 @@ select {
 
 /*RESPONSIVE SHOP*/
 @media (max-width: 768px) {
+  .shop h2 {
+    margin-top: 5%;
+  }
   .productos {
     max-width: 100%;
     gap: 15px;
@@ -685,6 +728,9 @@ select {
   }
 }
 @media (max-width: 480px) {
+  .shop h2 {
+    margin: 1%;
+  }
   .productos {
     flex-direction: column;
     gap: 10px;
@@ -773,6 +819,9 @@ select {
 }
 
 @media screen and (max-width: 768px) {
+  .unite h2 {
+    margin-top: 5%;
+  }
   .unite_logo-formulario {
     display: flex; /* Usamos Flexbox para alinear los elementos en línea */
     flex-direction: column;
@@ -801,13 +850,15 @@ select {
   }
 }
 @media screen and (max-width: 480px) {
+  .unite h2 {
+    font-size: 2rem;
+  }
   .unite_logo-formulario {
     display: flex; /* Usamos Flexbox para alinear los elementos en línea */
     flex-direction: column;
     justify-content: center; /* Separa el formulario y la imagen a los extremos */
     align-items: center; /* Alinea ambos elementos en la parte superior */
     gap: 20px; /* Añade espacio entre el formulario y la imagen */
-    margin: 20px;
   }
   .formulario {
     width: 80%;
@@ -863,6 +914,9 @@ select {
 
 /*RESPONSIVE CONTACTO*/
 @media screen and (max-width: 768px) {
+  .contactate h2 {
+    margin-top: 12%;
+  }
   .contactate_logo-formulario {
     display: flex; /* Usamos Flexbox para alinear los elementos en línea */
     flex-direction: column;
@@ -873,7 +927,8 @@ select {
   }
   .cotactate_logo img {
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    width: 80vw;
     max-width: 768px;
     border: 5px solid goldenrod;
     border-radius: 10px;
@@ -882,6 +937,9 @@ select {
   }
 }
 @media screen and (max-width: 480px) {
+  .contactate h2 {
+    margin-top: 0%;
+  }
   .contactate_logo-formulario {
     display: flex; /* Usamos Flexbox para alinear los elementos en línea */
     flex-direction: column;
@@ -892,7 +950,7 @@ select {
   }
   .cotactate_logo img {
     flex-direction: column;
-    width: 100%;
+    width: 80vw;
     max-width: 480px;
     border: 5px solid goldenrod;
     border-radius: 10px;
@@ -954,6 +1012,9 @@ h3 a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .teams h2 {
+    margin-top: 30%;
+  }
   .team-selection {
     display: flex;
     flex-direction: column;
@@ -978,19 +1039,19 @@ h3 a:hover {
   }
 }
 @media screen and (max-width: 480px) {
+  .teams h2 {
+    margin-top: auto;
+    align-content: center;
+  }
   .team-selection {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin: 0 auto;
-    max-width: 480px;
     padding-bottom: 10%;
   }
   .team-item img {
-    width: 100%;
-    max-width: 300px;
     border-radius: 10px;
     opacity: 1;
   }
@@ -1005,11 +1066,12 @@ h3 a:hover {
 .callofduty {
   position: relative;
   width: 100%;
-  height: 60vh;
+  max-width: 100%;
+  height: 30vh;
   overflow: hidden;
   text-align: center;
   font-size: 2.5rem;
-  margin-top: 0%;
+  margin-top: 80px;
   margin-bottom: 0;
   display: flex; /* Activamos flexbox */
   justify-content: center; /* Centrado horizontal */
@@ -1028,7 +1090,8 @@ h3 a:hover {
   position: absolute;
   left: 20%;
   width: 100%;
-  transform: translate(-20%, -5%);
+  max-width: 100%;
+  transform: translate(-20%, 5%);
   z-index: 1;
   opacity: 0.9; /* Puedes ajustar la opacidad si quieres */
   border: solid gold;
@@ -1047,14 +1110,6 @@ h3 a:hover {
   color: gold;
 }
 
-.warzone h3 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: black;
-  text-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
-}
-
 /* Sección de 'Sobre Call of Duty' */
 .sobre-callofduty {
   background-image: url(../img/Call\ Of\ Duty.jpeg);
@@ -1063,7 +1118,7 @@ h3 a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 65vh;
+  height: 50vh;
   z-index: 1;
   text-align: center;
   font-size: 2.5rem;
@@ -1116,10 +1171,38 @@ h3 a:hover {
   line-height: 1.8;
 }
 
+/* Sección de 'Trofeos' */
+.cod h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
+}
+
+.trofeos_cod p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  text-align: justify;
+  background-color: goldenrod;
+  border: solid;
+  padding: 2%;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-left: 5%;
+}
+
 .trofeos_cod {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   margin: 20px;
 }
 
@@ -1144,12 +1227,43 @@ h3 a:hover {
   object-fit: cover; /* Asegura que el video llene el contenedor sin deformarse */
 }
 
+/* Estilo para la tabla */
+table {
+  width: auto 0;
+  justify-content: center;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+  padding: 12px;
+  border: 1px solid white;
+}
+
+table th {
+  background-color: #000000;
+  color: yellow;
+}
+
+table tr:nth-child(even) {
+  background-color: goldenrod;
+}
+
+table tr:hover {
+  background-color: #000000;
+}
+
 /*RESPONSIVE*/
 @media screen and (max-width: 768px) {
   .callofduty {
     position: relative;
     width: 100%;
-    height: 35vh;
+    height: 25vh;
+    margin-top: 15px;
   }
   .sobre-callofduty {
     width: 100%;
@@ -1206,25 +1320,23 @@ h3 a:hover {
     font-size: 1.2rem;
     line-height: 1.8;
   }
+  table {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 480px) {
-  main {
-    margin-top: 89px;
-  }
   .callofduty {
-    position: relative;
-    width: 100%;
-    height: 35vh;
-  }
-  .callofduty video {
-    transform: translate(-20%, -5%);
+    width: 100vw;
+    max-width: 100%;
+    height: 17vh;
+    margin-top: -25px;
   }
   .sobre-callofduty {
-    width: 100%;
-    height: 85vh;
+    width: 100vw;
+    height: 65vh;
     z-index: 1;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     color: black;
   }
@@ -1232,20 +1344,18 @@ h3 a:hover {
     color: white;
     padding-top: 10%;
     text-decoration: solid;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-shadow: 3px 3px 0px black;
   }
   .sobre-callofduty p {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
-    width: 90%;
+    width: 85%;
     text-align: justify;
-    padding-top: 10%;
-    padding-right: 10%;
     color: whitesmoke;
     font-size: 0.9rem;
-    line-height: 1.8;
+    line-height: 1.5;
     text-shadow: 3px 3px 0px black;
   }
   /* Sección 'Roster y la Liga' */
@@ -1254,14 +1364,15 @@ h3 a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    width: 100vw;
+    margin: 0;
   }
   .roster-liga img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 80vw;
     border-radius: 10px;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -1276,11 +1387,15 @@ h3 a:hover {
     font-size: 1.2rem;
     line-height: 1.8;
   }
+  .cod h3 {
+    font-size: 1.5rem;
+  }
   .trofeos_cod {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    width: 100vw;
+    margin: 0;
   }
   .trofeos_cod p {
     background-color: goldenrod;
@@ -1288,7 +1403,7 @@ h3 a:hover {
     padding: 5%;
     margin-right: 5%;
     border-radius: 10px;
-    width: 45%;
+    width: 80%;
     align-items: center;
     text-align: justify;
     color: black;
@@ -1299,86 +1414,29 @@ h3 a:hover {
     border-radius: 50%; /* Forma circular */
     align-items: center;
     box-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
-    width: 300px; /* Ancho fijo */
-    height: 300px; /* Alto fijo */
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
     object-fit: cover; /* Asegura que el video llene el contenedor sin deformarse */
   }
+  .trofeos_cod_tabla {
+    display: block;
+    width: 100%;
+  }
+  .trofeos_cod_tabla tr {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .trofeos_cod_tabla th {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .trofeos_cod_tabla th img {
+    display: block;
+    margin-top: 10px;
+  }
 }
-/* Sección de 'Trofeos' */
-.cod h3 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: black;
-  text-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
-}
-
-.trofeos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-
-.trofeos_cod p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-  text-align: justify;
-  background-color: goldenrod;
-  border: solid;
-  padding: 2%;
-  color: black;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-left: 5%;
-}
-
-/* Estilo para la tabla */
-table {
-  width: 80%;
-  margin: 20px auto;
-  border-collapse: collapse;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-table th, table td {
-  padding: 12px;
-  border: 1px solid #ddd;
-}
-
-table th {
-  background-color: #000000;
-  color: yellow;
-}
-
-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-table tr:hover {
-  background-color: #ddd;
-}
-
-.cod_equipo {
-  background-color: goldenrod;
-}
-
-audio {
-  display: flow-root;
-  margin: 20px auto;
-  width: 80%;
-  height: 50px;
-  border-radius: 5px;
-  background-color: black;
-  box-shadow: 0 5px 25px goldenrod;
-}
-
 /*EQUIPOS: Lol*/
 main {
   margin-top: 122px;
@@ -1386,13 +1444,13 @@ main {
 
 .leagueoflegends {
   position: relative;
-  width: 100%;
-  height: 60vh;
+  width: 100vw;
+  height: 30vh;
+  max-width: 100%;
   overflow: hidden;
   text-align: center;
   font-size: 2.5rem;
-  margin-top: 0%;
-  margin-bottom: 0;
+  margin: 0;
   display: flex; /* Activamos flexbox */
   justify-content: center; /* Centrado horizontal */
   align-items: center; /* Centrado vertical */
@@ -1409,12 +1467,13 @@ main {
 .leagueoflegends video {
   position: absolute;
   left: 20%;
-  width: 100%;
-  transform: translate(-20%, -20%);
+  transform: translate(-20%, -10%);
   z-index: 1;
   opacity: 0.9; /* Puedes ajustar la opacidad si quieres */
   border: solid gold;
   border-bottom: solid goldenrod;
+  width: 100vw;
+  max-width: 100%;
 }
 
 .lol_subt {
@@ -1444,7 +1503,7 @@ main {
   color: white;
   padding-top: 15%;
   text-decoration: solid;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-shadow: 3px 3px 0px black;
 }
 
@@ -1452,11 +1511,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20%;
-  width: 75%;
+  padding-top: 5%;
+  padding-left: 15%;
+  width: 85%;
   text-align: justify;
-  color: whitesmoke;
-  font-size: 0.8rem;
+  color: goldenrod;
+  font-size: 1.25rem;
   line-height: 1.8;
   text-shadow: 3px 3px 0px black;
 }
@@ -1527,14 +1587,23 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  main {
+    margin-top: 200px;
+  }
   .leagueoflegends {
-    position: relative;
-    width: 100%;
-    height: 35vh;
+    width: 100vw;
+    height: 22vh;
+    max-width: 100%;
+  }
+  /* Estilo del video */
+  .leagueoflegends video {
+    left: 20%;
+    transform: translate(-20%, -5%);
   }
   .lol_subt_sobre {
     width: 100%;
     height: 65vh;
+    margin-top: auto -15%;
     z-index: 1;
     text-align: center;
     font-size: 2.5rem;
@@ -1549,21 +1618,21 @@ main {
     text-shadow: 3px 3px 0px black;
   }
   .lol_subt_sobre p {
+    padding: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 85%;
+    width: 100%;
     text-align: justify;
-    color: whitesmoke;
-    font-size: 0.9rem;
-    line-height: 1.8;
-    text-shadow: 3px 3px 0px black;
+    color: goldenrod;
   }
   .rosterLOL {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    margin: 0;
   }
   .rosterLOL p {
     display: flex;
@@ -1572,7 +1641,7 @@ main {
     align-items: center;
     padding: 4%;
     margin-top: 2%;
-    width: 85%;
+    width: 85vw;
   }
   .rosterLOL img {
     display: flex;
@@ -1580,7 +1649,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 3%;
-    width: 600px;
+    width: 100vw;
     border-radius: 10px;
   }
   .trofeos-lol {
@@ -1598,36 +1667,27 @@ main {
     margin-top: 2%;
     width: 85%;
     margin-left: 3%;
-  }
-  .trofeos-lol img {
-    box-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
-    margin: 3%;
-    width: 500px;
-    border-radius: 10px;
   }
 }
 @media screen and (max-width: 480px) {
-  main {
-    margin-top: 89px;
-  }
   .leagueoflegends {
-    position: relative;
-    width: 100%;
-    height: 40vh;
+    margin-top: 20px;
+    width: 100vw;
+    height: 13.5vh;
+    max-width: 100%;
   }
+  /* Estilo del video */
   .leagueoflegends video {
-    position: absolute;
     left: 20%;
-    width: 200%;
-    transform: translate(-20%, -20%);
-    z-index: 1;
-    opacity: 1; /* Puedes ajustar la opacidad si quieres */
-    border: solid gold;
-    border-bottom: solid goldenrod;
+    transform: translate(-20%, -5%);
+  }
+  .leagueoflegends h1 {
+    font-size: 1rem;
   }
   .lol_subt_sobre {
     width: 100%;
     height: 65vh;
+    margin-top: auto -15%;
     z-index: 1;
     text-align: center;
     font-size: 2.5rem;
@@ -1638,26 +1698,27 @@ main {
     color: white;
     padding-top: 10%;
     text-decoration: solid;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     text-shadow: 3px 3px 0px black;
   }
   .lol_subt_sobre p {
+    padding: 20px;
     display: flex;
     justify-content: flex-start;
-    align-items: justify;
-    width: 100%;
-    padding-right: 20%;
-    text-align: center;
-    color: whitesmoke;
-    font-size: 0.7rem;
-    line-height: 1.8;
-    text-shadow: 3px 3px 0px black;
+    align-items: center;
+    font-size: 0.95rem;
+    width: 100vw;
+    text-align: justify;
+    color: black;
+    text-shadow: 3px 3px 0px white;
   }
   .rosterLOL {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    margin: 0;
   }
   .rosterLOL p {
     display: flex;
@@ -1666,15 +1727,15 @@ main {
     align-items: center;
     padding: 4%;
     margin-top: 2%;
-    width: 85%;
+    width: 85vw;
   }
   .rosterLOL img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3%;
-    width: 400px;
+    margin: 0%;
+    width: 90vw;
     border-radius: 10px;
   }
   .trofeos-lol {
@@ -1693,16 +1754,35 @@ main {
     width: 85%;
     margin-left: 3%;
   }
-  .trofeos-lol img {
+  .trofeos-lol video {
+    border-radius: 50%; /* Forma circular */
     box-shadow: 3px 3px 0px goldenrod, -3px 3px 0px goldenrod, 3px -3px 0px gold, -3px -3px 0px gold;
-    margin: 3%;
-    width: 450px;
-    border-radius: 10px;
+    width: 150px; /* Ancho fijo */
+    height: 150px; /* Alto fijo */
+    object-fit: cover; /* Asegura que el video llene el contenedor sin deformarse */
+  }
+  .trofeos_lol_tabla {
+    display: block;
+    width: 100%;
+  }
+  .trofeos_lol_tabla tr {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .trofeos_lol_tabla th {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .trofeos_lol_tabla th img {
+    display: block;
+    margin-top: 10px;
   }
 }
 /*JUEGO: WARZONE*/
 main {
-  margin-top: 99px;
+  margin-top: 34px;
   margin-bottom: 0;
 }
 
@@ -1710,8 +1790,8 @@ main {
   position: relative;
   overflow: hidden;
   text-align: center;
-  width: 100%;
-  height: 60vh;
+  width: auto;
+  height: 35vh;
   font-size: 2.5rem;
   margin-top: 0%;
   margin-bottom: 0;
@@ -1731,7 +1811,7 @@ main {
 .warzone video {
   position: absolute;
   left: 20%;
-  width: 100%;
+  width: 100vw;
   transform: translate(-20%, 5%);
   z-index: 1;
   opacity: 0.9; /* Puedes ajustar la opacidad si quieres */
@@ -1749,7 +1829,6 @@ main {
 
 .sobre_wz {
   width: 100%;
-  height: 65vh;
   text-align: center;
   font-size: 2.5rem;
   color: black;
@@ -1777,6 +1856,10 @@ main {
   color: black;
   font-size: 1.2rem;
   line-height: 1.8;
+}
+
+.roster_wz h3 {
+  margin: auto;
 }
 
 .roster_liga_wz {
@@ -1816,15 +1899,17 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  main {
-    margin-top: 0;
+  .warzone {
+    margin-top: -50px;
+    width: 100vw;
+    height: 45vh;
   }
   .warzone video {
     width: 170%;
     margin-bottom: 0;
   }
   .sobre_wz {
-    margin-bottom: 50%;
+    margin-bottom: 15%;
   }
   .roster_wz {
     margin-top: 10%;
@@ -1842,18 +1927,30 @@ main {
   }
 }
 @media screen and (max-width: 480px) {
-  main {
-    margin-top: -10px;
+  .warzone {
+    margin-top: -80px;
+    margin-left: -28px;
+    width: auto;
+    height: 35vh;
   }
   .warzone video {
-    width: 210%;
+    width: auto;
     transform: translate(-35%, -5%);
   }
+  .sobre_warzone {
+    width: auto 100vw;
+  }
   .sobre_wz {
-    margin-bottom: 70%;
+    margin: auto;
+  }
+  .sobre_wz p {
+    margin-left: 25px;
+    width: 90vw;
+    font-size: 0.92rem;
+    margin-bottom: auto;
   }
   .roster_wz {
-    margin-top: 30%;
+    margin-top: auto;
     margin-bottom: 4%;
   }
   .roster_liga_wz {
@@ -1866,6 +1963,15 @@ main {
   .roster_liga_wz p {
     width: 90%;
   }
+}
+/*CONFIGURACIONES DE POP UP DE MÚSCIA*/
+audio {
+  display: flow-root;
+  margin: 20px auto;
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px goldenrod;
 }
 
 /*# sourceMappingURL=style.css.map */
